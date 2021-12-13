@@ -94,11 +94,9 @@ body {
     color: var(--clr-primary-400);
 }
 
-.nft-info__intro {
+.nft-info__description {
     color: var(--clr-primary-200);
-    /* font-size: 0.87rem; */
-    /* font-size: 1rem; */
-    font-size: clamp(0.87rem, 3vw, 0.97rem);
+    font-size: clamp(0.87rem, 2vh, 0.97rem);
     font-weight: 300;
     line-height: 1.5rem;
     margin-bottom: 1rem;
