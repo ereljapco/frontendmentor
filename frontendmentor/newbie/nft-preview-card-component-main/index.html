@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      <!-- FAVICON -->
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <!-- FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+      <!-- STYLESHEET -->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      
+      <title>Frontend Mentor | NFT preview card component | Coded By Erelita</title>
+    </head>
+    <body>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+      <main class="nft-card">
+        <div class="nft-card--container">
+          <section class="nft-img">
+            <img src="assets/images/image-equilibrium.jpg" alt="Equilibrium image">
+            <a href="#">
+              <div class="nft-img__view">
+                <img src="/assets/images/icon-view.svg" alt="">
+              </div>
+            </a>
+          </section>
+          <section class="nft-info">
+            <h1 class="nft-info__title"><a href="#">Equilibrium #3429</a></h1>
+            <p class="nft-info__intro">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div class="nft-info__details">
+              <div class="nft-info__value">
+                <img src="/assets/images/icon-ethereum.svg" alt="">
+                0.041 ETH
+              </div>
+              <div class="nft-info__time">
+                <img src="/assets/images/icon-clock.svg" alt="">
+                3 days left
+              </div>
+            </div>
+          </section>
+          <section class="nft-creator">
+            <div class="nft-creator__avatar">
+              <img src="/assets/images/image-avatar.png" alt="">
+            </div>
+            <h2 class="nft-creator__name">Creation of <a href="#">Jules Wyvern</a></h2>
+          </section>
+        </div>
+      </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/erelita" target="_blank">Erelita</a>.
+      </footer>
+    </body>
 </html>
