@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: var(--ft-primary);
     font-size: 24px;
     background-color: var(--clr-neutral-200);
@@ -84,7 +85,6 @@ input::placeholder {
 
 /* ----- INPUT */
 .calculator__input {
-    /* background-color: var(--clr-neutral-300); */
     padding: 0 10px;
     margin: 50px 0 32px 0;
 }
@@ -98,6 +98,10 @@ input::placeholder {
     font-size: 0.65em;
     font-weight: bold;
     margin-bottom: 0.5em;
+}
+
+.input__tip .input__title {
+    margin-bottom: 0.85em;
 }
 
 .input__container {
@@ -117,7 +121,6 @@ input::placeholder {
     display: flex;
     justify-content: flex-end;
     width: 85%;
-    /* padding: 15px; */
 }
 
 /* INPUT TIP */
@@ -139,6 +142,7 @@ button[type=submit] {
     padding: 0.2em;
     border: none;
     border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 button[type=submit]:focus,
@@ -146,6 +150,13 @@ button[type=submit]:hover,
 button[type=submit]:active {
     color: var(--clr-neutral-500);
     background-color: var(--clr-primary);
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    color: var(--clr-neutral-500);
+    background-color: var(--clr-neutral-200);
+    cursor: pointer;
 }
 
 /* ----- OUTPUT */
@@ -160,7 +171,6 @@ button[type=submit]:active {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 1em;
 }
 
 .output__tip > * {
@@ -189,7 +199,7 @@ button[type=submit]:active {
     display: flex;
     justify-content: flex-end;
     color: var(--clr-primary);
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: right;
 }
@@ -205,6 +215,7 @@ button[type=reset] {
     padding: 15px 0;
     border: none;
     border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 button[type=reset]:focus, button[type=reset]:hover {
@@ -214,7 +225,15 @@ button[type=reset]:focus, button[type=reset]:hover {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 40em) {
+    .calculator__form {
+        padding: 0 32px;
+        column-gap: 45px;
+    }
     /* ----- INPUT */
+    .input__bill, .input__tip {
+        margin-bottom: 45px;
+    }
+
     .input__select {
         display: flex;
         flex-wrap: wrap;
@@ -224,7 +243,7 @@ button[type=reset]:focus, button[type=reset]:hover {
     /* ----- OUTPUT */
     .calculator__output {
         margin: 32px 0;
-        padding: 60px 40 0 40px;
+        padding: 60px 40px 40px 40px;
     }
 
     .output__tip {
@@ -232,6 +251,10 @@ button[type=reset]:focus, button[type=reset]:hover {
     }
 
     .output__total {
-        margin-bottom: 7em;
+        margin-bottom: 105px;
+    }
+
+    .output__amount {
+        font-size: 1.75em;
     }
 }

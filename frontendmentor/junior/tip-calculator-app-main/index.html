@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- STYLESHEET -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/images/logo.svg" alt="">
-    </div>
-  </header>
-  <main class="calculator">
-    <form action="" class="calculator__form">
-      <!-- INPUT -->
-      <div class="calculator__input">
-        <div class="input__bill">
-          <div class="input__title">Bill</div>
-          <div class="input__container">
-            <div class="input__icon">
-              <img src="assets/images/icon-dollar.svg" alt="">
-            </div>
-            <div class="input__amount">
-              <input type="number" placeholder="0" step="0.01">
-            </div>
-          </div>
-        </div>
-        <div class="input__tip">
-          <div class="input__title">Select Tip %</div>
-          <div class="input__select">
-            <button type="submit" name="select__tip" value="0.05">5%</button>
-            <button type="submit" name="select__tip" value="0.10">10%</button>
-            <button type="submit" name="select__tip" value="0.15">15%</button>
-            <button type="submit" name="select__tip" value="0.25">25%</button>
-            <button type="submit" name="select__tip" value="0.50" >50%</button>
-            <input type="number" name="select__tip" id="tip__custom" placeholder="Custom">
-          </div>
-        </div>
-        <div class="input__people">
-          <div class="input__title">Number of People</div>
-          <div class="input__container">
-            <div class="input__icon">
-              <img src="assets/images/icon-person.svg" alt="">
-            </div>
-            <div class="input__amount">
-              <input type="number" placeholder="0">
-            </div>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- SPLITTER LOGO -->
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="">
       </div>
-      <!-- OUTPUT -->
-      <div class="calculator__output">
-        <div class="output__tip">
-          <div class="output__label">
-            <div class="output__label--amount">Tip Amount</div>
-            <div class="output__label--person">/ person</div>
+    </header>
+    <main class="calculator">
+      <form action="" class="calculator__form">
+        <!-- INPUT -->
+        <div class="calculator__input">
+          <!-- BILL -->
+          <div class="input__bill">
+            <div class="input__title">Bill</div>
+            <div class="input__container">
+              <div class="input__icon">
+                <img src="assets/images/icon-dollar.svg" alt="">
+              </div>
+              <div class="input__amount">
+                <input type="number" id="input_bill" placeholder="0" step="0.01">
+              </div>
+            </div>
           </div>
-          <div class="output__amount">
-            $
-            <div class="total__amount">32.79</div>
+          <!-- TIP % -->
+          <div class="input__tip">
+            <div class="input__title">Select Tip %</div>
+            <div class="input__select">
+              <button type="submit" name="select__tip" id="input_tip_05" value="0.05">5%</button>
+              <button type="submit" name="select__tip" id="input_tip_10" value="0.10">10%</button>
+              <button type="submit" name="select__tip" id="input_tip_15" value="0.15">15%</button>
+              <button type="submit" name="select__tip" id="input_tip_25" value="0.25">25%</button>
+              <button type="submit" name="select__tip" id="input_tip_25" value="0.50" >50%</button>
+              <input type="number" name="select__tip" id="input_tip_custom" placeholder="Custom">
+            </div>
+          </div>
+          <!-- # OF PEOPLE -->
+          <div class="input__people">
+            <div class="input__title">Number of People</div>
+            <div class="input__container">
+              <div class="input__icon">
+                <img src="assets/images/icon-person.svg" alt="">
+              </div>
+              <div class="input__amount">
+                <input type="number" id="input_people" placeholder="0">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="output__total">
-          <div class="output__label">
-            <div class="output__label--amount">Total</div>
-            <div class="output__label--person">/ person</div>
+        <!-- OUTPUT -->
+        <div class="calculator__output">
+          <!-- TIP/PERSON -->
+          <div class="output__tip">
+            <div class="output__label">
+              <div class="output__label--amount">Tip Amount</div>
+              <div class="output__label--person">/ person</div>
+            </div>
+            <div class="output__amount">
+              $
+              <div class="total__amount">0.00</div>
+            </div>
           </div>
-          <div class="output__amount">
-            $
-            <div class="total__amount">32.79</div>
+          <!-- BILL/PERSON -->
+          <div class="output__total">
+            <div class="output__label">
+              <div class="output__label--amount">Total</div>
+              <div class="output__label--person">/ person</div>
+            </div>
+            <div class="output__amount">
+              $
+              <div class="total__amount">0.00</div>
+            </div>
           </div>
+          <!-- RESET BUTTON -->
+          <button type="reset">RESET</button>
         </div>
-        <button type="reset">RESET</button>
-      </div>
-    </form>
-  </main>
-  
-  <!-- <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Erelita</a>.
-  </footer> -->
-</body>
+      </form>
+    </main>
+    
+    <!-- <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Erelita</a>.
+    </footer> -->
+  </body>
 </html>
