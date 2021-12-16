@@ -11,7 +11,7 @@
     --clr-neutral-500: hsl(183, 100%, 15%);
 }
 
-*, div, ::before, ::after {
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     font-family: var(--ft-primary);
     font-size: 24px;
     background-color: var(--clr-neutral-200);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* ----- HEADER ----- */
@@ -73,6 +73,7 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -93,15 +94,30 @@ input::placeholder {
     margin-bottom: 40px;
 }
 
-.input__title {
-    color: var(--clr-neutral-400);
+.input__label {
+    display: flex;
     font-size: 0.65em;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
 
+.input__title {
+    color: var(--clr-neutral-400);
+}
+
 .input__tip .input__title {
     margin-bottom: 0.85em;
+}
+
+.input__people .input__title {
+    width: 50%;
+}
+
+.input__people .input__errormsg {
+    color: #cd8378;
+    text-align: right;
+    width: 50%;
+    visibility: hidden;
 }
 
 .input__container {
@@ -109,6 +125,7 @@ input::placeholder {
     align-items: center;
     background-color: var(--clr-neutral-100);
     width: 100%;
+    border: 2px solid var(--clr-neutral-100);
     border-radius: 5px;
 }
 

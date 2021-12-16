@@ -26,37 +26,42 @@
         <div class="calculator__input">
           <!-- BILL -->
           <div class="input__bill">
-            <div class="input__title">Bill</div>
-            <div class="input__container">
+            <div class="input__label input__title">Bill</div>
+            <div id="bill-container" class="input__container">
               <div class="input__icon">
                 <img src="assets/images/icon-dollar.svg" alt="">
               </div>
               <div class="input__amount">
-                <input type="number" id="input_bill" placeholder="0" step="0.01">
+                <input type="number" id="bill-input" placeholder="0" step="0.01">
               </div>
             </div>
           </div>
           <!-- TIP % -->
           <div class="input__tip">
-            <div class="input__title">Select Tip %</div>
+            <div class="input__label input__title">Select Tip %</div>
             <div class="input__select">
               <button type="submit" name="select__tip" id="input_tip_05" value="0.05">5%</button>
               <button type="submit" name="select__tip" id="input_tip_10" value="0.10">10%</button>
               <button type="submit" name="select__tip" id="input_tip_15" value="0.15">15%</button>
               <button type="submit" name="select__tip" id="input_tip_25" value="0.25">25%</button>
               <button type="submit" name="select__tip" id="input_tip_25" value="0.50" >50%</button>
-              <input type="number" name="select__tip" id="input_tip_custom" placeholder="Custom">
+              <div id="#tip-custom-container" class="input__container">
+                <input type="number" name="select__tip" id="input-tip-custom" placeholder="Custom">
+              </div>
             </div>
           </div>
           <!-- # OF PEOPLE -->
           <div class="input__people">
-            <div class="input__title">Number of People</div>
-            <div class="input__container">
+            <div class="input__label">
+              <div class="input__title">Number of People</div>
+              <div class="input__errormsg">Can't be zero</div>
+            </div>
+            <div id="people-container" class="input__container">
               <div class="input__icon">
                 <img src="assets/images/icon-person.svg" alt="">
               </div>
               <div class="input__amount">
-                <input type="number" id="input_people" placeholder="0">
+                <input type="number" id="people-input" placeholder="0">
               </div>
             </div>
           </div>
@@ -95,5 +100,8 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Erelita</a>.
     </footer> -->
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
