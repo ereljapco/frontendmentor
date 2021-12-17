@@ -109,11 +109,11 @@ input::placeholder {
     margin-bottom: 0.85em;
 }
 
-.input__people .input__title {
+.input__title {
     width: 50%;
 }
 
-.input__people .input__errormsg {
+.input__errormsg {
     color: #cd8378;
     text-align: right;
     width: 50%;
@@ -151,7 +151,7 @@ input::placeholder {
     flex: 1 1 115px;
 }
 
-button[type=submit] {
+button[type=button] {
     color: var(--clr-neutral-100);
     font-family: var(--ft-primary);
     font-size: 1em;
@@ -162,9 +162,9 @@ button[type=submit] {
     transition: 0.3s ease;
 }
 
-button[type=submit]:focus,
-button[type=submit]:hover,
-button[type=submit]:active {
+button[type=button]:focus,
+button[type=button]:hover,
+button[type=button]:active {
     color: var(--clr-neutral-500);
     background-color: var(--clr-primary);
     cursor: pointer;
@@ -222,6 +222,15 @@ button[type=submit]:hover {
 }
 
 /* BUTTON RESET */
+button[type=reset]:disabled {
+    opacity: 0.2;
+}
+
+button[type=reset]:disabled:hover {
+    background-color: var(--clr-primary);
+    cursor: not-allowed;
+}
+
 button[type=reset] {
     color: var(--clr-neutral-500);
     font-family: var(--ft-primary);
