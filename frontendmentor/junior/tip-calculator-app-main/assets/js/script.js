@@ -5,10 +5,14 @@ const tipCustom = document.querySelector('#input-tip-custom');
 const tipCustomContainer = document.querySelector('.input__tip > .input__select > .input__container');
 const peopleInput = document.querySelector('#people-input');
 const peopleContainer = document.querySelector('.input__people > .input__container');
+const billErrorMsg = document.querySelector('.input__bill >  .input__label > .input__errormsg');
+const peopleErrorMsg = document.querySelector('.input__people >  .input__label > .input__errormsg');
+const tipAmount = document.querySelector('.output__tip > .output__amount > .total__amount');
+const totalAmount = document.querySelector('.output__total > .output__amount > .total__amount');
 const resetButton = document.querySelector('#reset-button');
 
 // Sets reset button to disabled initially.
-document.querySelector('#reset-button').disabled = true;
+resetButton.disabled = true;
 
 // --- EVENT LISTENERS
 // Sets reset button to disabled if both inputs are empty.
@@ -36,9 +40,9 @@ resetButton.addEventListener('click', resetAll);
 // Sets reset button to disabled if both inputs are empty.
 function resetDisabled() {
     if (billInput.value === '' && peopleInput.value === '') { 
-        document.querySelector('#reset-button').disabled = true;
+        resetButton.disabled = true;
     } else {
-        document.querySelector('#reset-button').disabled = false;
+        resetButton.disabled = false;
     }
 }
 
@@ -46,7 +50,7 @@ function resetDisabled() {
 function inputFocusIn() {
     if (this === billInput) {
         billContainer.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--clr-primary');
-        document.querySelector('.input__bill >  .input__label > .input__errormsg').style.visibility = 'hidden';
+        billErrorMsg.style.visibility = 'hidden';
     }
     
     if (this === tipCustom) {
@@ -55,7 +59,7 @@ function inputFocusIn() {
     
     if (this === peopleInput) {
         peopleContainer.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--clr-primary');
-        document.querySelector('.input__people >  .input__label > .input__errormsg').style.visibility = 'hidden';
+        peopleErrorMsg.style.visibility = 'hidden';
     }
 }
 
@@ -65,12 +69,12 @@ function inputFocusOut() {
         billContainer.style.borderWidth = '2px';
         billContainer.style.borderStyle = 'solid';
         billContainer.style.borderColor = '#cd8378';
-        document.querySelector('.input__bill >  .input__label > .input__errormsg').style.visibility = 'visible';
+        billErrorMsg.style.visibility = 'visible';
     } else if (this === peopleInput && this.value === '') {
         peopleContainer.style.borderWidth = '2px';
         peopleContainer.style.borderStyle = 'solid';
         peopleContainer.style.borderColor = '#cd8378';
-        document.querySelector('.input__people >  .input__label > .input__errormsg').style.visibility = 'visible';
+        peopleErrorMsg.style.visibility = 'visible';
     }
 
     if (this === tipCustom) {
@@ -78,27 +82,29 @@ function inputFocusOut() {
     }
 }
 
+// Computes tip and bill per person
 function computeOutput() {
     if (billInput.value > 0 && peopleInput.value > 0) {
+        // If % tip is selected, custom tip will reset to empty
         if (this !== tipCustom) {
             tipCustom.value = '';
         }
-
-        let tipAmount = (billInput.value * (this.value / 100)) / peopleInput.value;
-        document.querySelector('.output__tip > .output__amount > .total__amount').innerHTML = Math.trunc(tipAmount * 100) / 100;
-
-
-        let totalAmount = (billInput.value / peopleInput.value) + tipAmount;
-        document.querySelector('.output__total > .output__amount > .total__amount').innerHTML = totalAmount.toFixed(2);
+        // Computes tip / person
+        let tip = (billInput.value * (this.value / 100)) / peopleInput.value;
+        tipAmount.innerHTML = Math.trunc(tip * 100) / 100;
+        // Computes bill + tip / person
+        let total = (billInput.value / peopleInput.value) + tip;
+        totalAmount.innerHTML = total.toFixed(2);
     }
 }
 
+// Resets inputs and outputs
 function resetAll() {
     billInput.value = '';
     tipCustom.value = '';
     peopleInput.value = '';
-    document.querySelector('.output__tip > .output__amount > .total__amount').innerHTML = (0).toFixed(2);
-    document.querySelector('.output__total > .output__amount > .total__amount').innerHTML = (0).toFixed(2);
-    document.querySelector('#reset-button').disabled = true;
+    tipAmount.innerHTML = (0).toFixed(2);
+    totalAmount.innerHTML = (0).toFixed(2);
+    resetButton.disabled = true;
 }
 
