@@ -155,6 +155,7 @@ button[type=button] {
     color: var(--clr-neutral-100);
     font-family: var(--ft-primary);
     font-size: 1em;
+    font-weight: 700;
     background-color: var(--clr-neutral-500);
     padding: 0.2em;
     border: none;
@@ -188,6 +189,14 @@ button[type=submit]:hover {
     display: flex;
     align-items: center;
     width: 100%;
+}
+
+.output__tip {
+    margin-bottom: 0.4em;
+}
+
+.output__total {
+    margin-bottom: 1em;
 }
 
 .output__tip > * {
