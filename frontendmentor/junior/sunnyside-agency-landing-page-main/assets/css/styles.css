@@ -47,12 +47,19 @@ header .logo {
 }
 /* navigation */
 header nav {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
-    top: 7em;
+    top: 5em;
     width: 90%;
     background-color: var(--clr-neutral-000);
     padding: 1em 0 2em 0;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.nav--appear {
+    transform: translateY(2em);
+    opacity: 100%;
 }
 
 header nav::after {
