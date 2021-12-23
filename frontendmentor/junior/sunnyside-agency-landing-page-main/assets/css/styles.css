@@ -129,6 +129,12 @@ h1 {
         padding: 3em 2em 0 2em;
     }
 
+    .header__top {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
     header .logo {
         /* background: url("../images/logo.svg") left top/contain no-repeat; */
         height: 1.75em;
@@ -136,6 +142,53 @@ h1 {
 
     .hamburger-icon {
         visibility: hidden;
+    }
+
+    header nav {
+        justify-self: self-end;
+        position: relative;
+        top: 0em;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+        opacity: 1;
+    }
+    
+    header nav::after {
+        content: '';
+        position: absolute;
+        border: none;
+    }
+    
+    header nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    header nav ul li a{
+        color: var(--clr-neutral-000);
+        font-size: 0.9em;
+        font-family: var(--ft-primary);
+        text-decoration: none;
+        line-height: 2.75em;
+    }
+    
+    header nav ul li input {
+        color: var(--clr-neutral-400);
+        font-size: 0.8em;
+        font-family: var(--ft-secondary);
+        text-transform: uppercase;
+        background-color: var(--clr-neutral-000);
+        padding: 1em 1.5em;
+        border: none;
+        border-radius: 2em;
+        margin-top: 0.6em;
     }
 }
 
