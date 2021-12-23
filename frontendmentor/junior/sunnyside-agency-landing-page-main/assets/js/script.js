@@ -1,5 +1,5 @@
 const hamburgerIcon = document.querySelector('.hamburger-icon');
-const headerNav = document.querySelector('header > nav');
+const headerNav = document.querySelector('header > .header__top > nav');
 
 // hamburgerIcon.addEventListener('click', () => {
 //     if (headerNav.style.visibility === 'hidden') {
