@@ -311,7 +311,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #90d4c5;
-    padding: 4em 0 5em 0;
+    padding: 4em 0 4em 0;
 }
 
 footer .logo {
@@ -335,6 +335,11 @@ footer ul li a {
     color: var(--clr-primary-cyan-200);
     font-family: var(--ft-primary);
     text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: var(--clr-neutral-000);
 }
 
 /* nav */
@@ -349,13 +354,17 @@ footer nav ul {
 /* social-links */
 .social-links {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 2.9em auto;
 }
 
 .social-links ul {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.social-links ul li {
+    margin: auto;
 }
 
 .facebook-link {
