@@ -311,7 +311,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #90d4c5;
-    padding: 3em 0 5em 0;
+    padding: 4em 0 5em 0;
 }
 
 footer .logo {
@@ -358,9 +358,75 @@ footer nav ul {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.social-links ul a:hover img {
-    background-color: var(--clr-neutral-000);
+.facebook-link {
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-primary-cyan-300);
     -webkit-mask: url(../images/icon-facebook.svg) center/contain no-repeat;
             mask: url(../images/icon-facebook.svg) center/contain no-repeat;
+    transition: 0.2s ease-in-out;
+}
 
+
+.facebook-link:hover {
+    background-color: var(--clr-neutral-000);
+}
+
+.instagram-link {
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-primary-cyan-300);
+    -webkit-mask: url(../images/icon-instagram.svg) center/contain no-repeat;
+            mask: url(../images/icon-instagram.svg) center/contain no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+
+.instagram-link:hover {
+    background-color: var(--clr-neutral-000);
+}
+
+.twitter-link {
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-primary-cyan-300);
+    -webkit-mask: url(../images/icon-twitter.svg) center/contain no-repeat;
+            mask: url(../images/icon-twitter.svg) center/contain no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+
+.twitter-link:hover {
+    background-color: var(--clr-neutral-000);
+}
+
+.pinterest-link {
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-primary-cyan-300);
+    -webkit-mask: url(../images/icon-pinterest.svg) center/contain no-repeat;
+            mask: url(../images/icon-pinterest.svg) center/contain no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+
+.pinterest-link:hover {
+    background-color: var(--clr-neutral-000);
+}
+
+.attribution {
+    color: var(--clr-primary-cyan-200);
+    font-family: var(--ft-primary);
+    font-size: 0.75em;
+    bottom: 0;
+}
+
+.attribution a {
+    color: var(--clr-primary-cyan-300);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.attribution a:hover {
+    color: var(--clr-neutral-000);
 }
