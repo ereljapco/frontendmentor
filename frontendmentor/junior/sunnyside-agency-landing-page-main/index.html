@@ -18,14 +18,28 @@
   <body>
     <header>
       <div class="header__top">
-        <div class="logo"></div>
-        <div class="hamburger-icon"></div>
-        <nav>
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="hamburger-icon">
+          <button aria-label="Menu">
+            <img src="assets/images/icon-hamburger.svg" alt="">
+          </button>
+        </div>
+        <nav class="nav__mobile">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><input type="button" value="Contact"></li>
+          </ul>
+        </nav>
+        <nav class="nav__desktop">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><button aria-label="Contact">Contact</button></li>
           </ul>
         </nav>
       </div>
@@ -90,10 +104,10 @@
         </div>
       </section>
       <div class="gallery">
-        <img src="assets/images/mobile/image-gallery-milkbottles.jpg" alt="">
-        <img src="assets/images/mobile/image-gallery-orange.jpg" alt="">
-        <img src="assets/images/mobile/image-gallery-cone.jpg" alt="">
-        <img src="assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        <div class="gallery__milkbottles"></div>
+        <div class="gallery__orange"></div>
+        <div class="gallery__cone"></div>
+        <div class="gallery__sugar-cubes"></div>
       </div>
     </main>
     <footer>

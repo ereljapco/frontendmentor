@@ -1,5 +1,5 @@
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const headerNav = document.querySelector('header > .header__top > nav');
+const hamburgerIcon = document.querySelector('.hamburger-icon > button');
+const headerNav = document.querySelector('header > .header__top > .nav__mobile');
 
 hamburgerIcon.addEventListener('click', () => {
     if (headerNav.classList.contains('nav--appear')) {
