@@ -108,7 +108,7 @@ header {
     line-height: 2.75em;
 }
 
-.nav__mobile ul li input {
+.nav__mobile ul li button {
     position: relative;
     color: var(--clr-neutral-400);
     font-size: 0.8em;
