@@ -508,6 +508,10 @@ footer nav ul {
         display: none;
     }
 
+    .nav__mobile {
+        display: none;
+    }
+
     .nav__desktop {
         display: block;
         width: calc(100% - clamp(7em, 1vw, 10em));
