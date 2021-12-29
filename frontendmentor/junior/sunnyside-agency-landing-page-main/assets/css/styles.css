@@ -52,6 +52,7 @@ header {
     width: calc(100% - 6.5em);
     text-align: right;
     margin: auto;
+    z-index: 99;
 }
 
 .hamburger-icon {
