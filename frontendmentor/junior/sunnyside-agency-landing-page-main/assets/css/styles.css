@@ -97,7 +97,6 @@ header {
 .nav__mobile ul li {
     display: block;
     text-align: center;
-    padding: 1.5em auto;
 }
 
 .nav__mobile ul li a {
@@ -354,11 +353,10 @@ footer {
 }
 
 footer .logo {
+    color: var(--clr-primary-cyan-300);
     width: 10em;
     height: 2em;
-    background-color: var(--clr-primary-cyan-300); 
-    -webkit-mask: url(../images/logo.svg) center/contain no-repeat;
-            mask: url(../images/logo.svg) center/contain no-repeat;
+    color: var(--clr-primary-cyan-300);
     margin: auto auto 2em auto;
 }
 
@@ -406,60 +404,13 @@ footer nav ul {
     margin: auto;
 }
 
-.facebook-link {
-    width: 20px;
-    height: 20px;
-    background-color: var(--clr-primary-cyan-300);
-    -webkit-mask: url(../images/icon-facebook.svg) center/contain no-repeat;
-            mask: url(../images/icon-facebook.svg) center/contain no-repeat;
+.social-links ul li svg {
+    color: var(--clr-primary-cyan-300);
     transition: 0.2s ease-in-out;
 }
 
-
-.facebook-link:hover {
-    background-color: var(--clr-neutral-000);
-}
-
-.instagram-link {
-    width: 20px;
-    height: 20px;
-    background-color: var(--clr-primary-cyan-300);
-    -webkit-mask: url(../images/icon-instagram.svg) center/contain no-repeat;
-            mask: url(../images/icon-instagram.svg) center/contain no-repeat;
-    transition: 0.2s ease-in-out;
-}
-
-
-.instagram-link:hover {
-    background-color: var(--clr-neutral-000);
-}
-
-.twitter-link {
-    width: 20px;
-    height: 20px;
-    background-color: var(--clr-primary-cyan-300);
-    -webkit-mask: url(../images/icon-twitter.svg) center/contain no-repeat;
-            mask: url(../images/icon-twitter.svg) center/contain no-repeat;
-    transition: 0.2s ease-in-out;
-}
-
-
-.twitter-link:hover {
-    background-color: var(--clr-neutral-000);
-}
-
-.pinterest-link {
-    width: 20px;
-    height: 20px;
-    background-color: var(--clr-primary-cyan-300);
-    -webkit-mask: url(../images/icon-pinterest.svg) center/contain no-repeat;
-            mask: url(../images/icon-pinterest.svg) center/contain no-repeat;
-    transition: 0.2s ease-in-out;
-}
-
-
-.pinterest-link:hover {
-    background-color: var(--clr-neutral-000);
+.social-links ul li svg:hover {
+    color: var(--clr-neutral-000);
 }
 
 .attribution {
@@ -479,8 +430,6 @@ footer nav ul {
     color: var(--clr-neutral-000);
 }
 
-
-/* @media screen and (min-width: 55em) { */
 @media screen and (min-width: 35em) {
     header {
         background: url("../images/desktop/image-header.jpg") center top/cover no-repeat no-repeat;
@@ -491,7 +440,6 @@ footer nav ul {
 
     .header__top .logo {
         width: clamp(6.5em, 15vw, 10em);
-        /* width: 10em; */
         margin: auto 0;
     }
 }
@@ -581,7 +529,7 @@ footer nav ul {
         "testimonials   testimonials   testimonials  testimonials"
         "gallery        gallery        gallery       gallery";
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr) 43em 25em;
+        grid-template-rows: repeat(2, 1fr) 33em 43em 25em;
     }
 
     .transform {
