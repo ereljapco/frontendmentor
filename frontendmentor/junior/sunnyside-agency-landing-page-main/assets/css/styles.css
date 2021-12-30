@@ -26,7 +26,7 @@ body {
 
 /* --- header */
 header {
-    background: url("../images/mobile/image-header.jpg") center top/cover no-repeat no-repeat;
+    background: url(../images/mobile/image-header.jpg) center top/cover no-repeat no-repeat;
     width: 100%;
     height: 30em;
     padding: 2em 1.5em 0 1.5em;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .arrow-down {
-    background: url("../images/icon-arrow-down.svg") center/contain no-repeat;
+    background: url(../images/icon-arrow-down.svg) center/contain no-repeat;
     height: 6.5em;
 }
 
@@ -225,24 +225,24 @@ main a {
 
 
 .egg {
-    background: url("../images/mobile/image-transform.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-transform.jpg) center/cover no-repeat;
     height: 17em;
 }
 
 .cup {
-    background: url("../images/mobile/image-stand-out.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-stand-out.jpg) center/cover no-repeat;
     height: 17em;
 }
 
 .graphic-design {
     color: var(--clr-primary-cyan-300);
-    background: url("../images/mobile/image-graphic-design.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-graphic-design.jpg) center/cover no-repeat;
     height: 33em;
 }
 
 .photography {
     color: var(--clr-primary-blue);
-    background: url("../images/mobile/image-photography.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-photography.jpg) center/cover no-repeat;
     height: 33em;
 }
 
@@ -320,25 +320,25 @@ main a {
 }
 
 .gallery__milkbottles {
-    background: url("../images/mobile/image-gallery-milkbottles.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-gallery-milkbottles.jpg) center/cover no-repeat;
     width: 100%;
     height: 10.4em;
 }
 
 .gallery__orange {
-    background: url("../images/mobile/image-gallery-orange.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-gallery-orange.jpg) center/cover no-repeat;
     width: 100%;
     height: 10.4em;
 }
 
 .gallery__cone {
-    background: url("../images/mobile/image-gallery-cone.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-gallery-cone.jpg) center/cover no-repeat;
     width: 100%;
     height: 10.4em;
 }
 
 .gallery__sugar-cubes {
-    background: url("../images/mobile/image-gallery-sugar-cubes.jpg") center/cover no-repeat;
+    background: url(../images/mobile/image-gallery-sugar-cubes.jpg) center/cover no-repeat;
     width: 100%;
     height: 10.4em;
 }
@@ -432,7 +432,7 @@ footer nav ul {
 
 @media screen and (min-width: 35em) {
     header {
-        background: url("../images/desktop/image-header.jpg") center top/cover no-repeat no-repeat;
+        background: url(../images/desktop/image-header.jpg) center top/cover no-repeat no-repeat;
         width: 100%;
         height: 45em;
         padding: 1.8em 1.5em 0 1.75em;
@@ -559,33 +559,32 @@ footer nav ul {
 
     .egg {
         grid-area: egg;
-        background: url("../images/desktop/image-transform.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-transform.jpg) center/cover no-repeat;
         height: 100%;
     }
     
     .cup {
         grid-area: cup;
-        background: url("../images/desktop/image-stand-out.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-stand-out.jpg) center/cover no-repeat;
         height: 100%;
     }
     
     .graphic-design {
         grid-area: graphic-design;
         color: var(--clr-primary-cyan-300);
-        background: url("../images/desktop/image-graphic-design.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-graphic-design.jpg) center/cover no-repeat;
         height: 33em;
     }
     
     .photography {
         grid-area: photography;
         color: var(--clr-primary-blue);
-        background: url("../images/desktop/image-photography.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-photography.jpg) center/cover no-repeat;
         height: 33em;
     }
     
     .graphic-design, 
     .photography {
-        padding: 3.5em 10em;
         padding: 3.5em clamp(5em, 13vw, 10em);
     }
 
@@ -596,7 +595,7 @@ footer nav ul {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2em;
         position: relative;
-        padding: 9em 9em 4.6em 9em;
+        padding: 9em 11vw 4.6em 11vw;
     }
     
     .testimonials h2 {
@@ -604,8 +603,10 @@ footer nav ul {
         font-size: 1.1em;
         margin-bottom: 4em;
     }
-    
+
     .testimonials__client {
+        display: grid;
+        grid-template-rows: 7em 9em 2em auto;
         margin-bottom: 3.5em;
     }
     
@@ -614,17 +615,9 @@ footer nav ul {
     }
     
     .testimonials__client img {
-        margin-bottom: 3em;
+        justify-self: center;
     }
-    
-    .testimonials__client p {
-        margin-bottom: 5em;
-    }
-    
-    .client__name {
-        margin-bottom: 0.5em;
-    }
-    
+
     .client__position {
         font-size: 0.75em;
     }
@@ -637,25 +630,25 @@ footer nav ul {
     }
     
     .gallery__milkbottles {
-        background: url("../images/desktop/image-gallery-milkbottles.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-gallery-milkbottles.jpg) center/cover no-repeat;
         width: 100%;
         height: 100%;
     }
     
     .gallery__orange {
-        background: url("../images/desktop/image-gallery-orange.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-gallery-orange.jpg) center/cover no-repeat;
         width: 100%;
         height: 100%;
     }
     
     .gallery__cone {
-        background: url("../images/desktop/image-gallery-cone.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-gallery-cone.jpg) center/cover no-repeat;
         width: 100%;
         height: 100%;
     }
     
     .gallery__sugar-cubes {
-        background: url("../images/desktop/image-gallery-sugarcubes.jpg") center/cover no-repeat;
+        background: url(../images/desktop/image-gallery-sugarcubes.jpg) center/cover no-repeat;
         width: 100%;
         height: 100%;
     }
