@@ -1,0 +1,115 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --ft-primary: 'Ubuntu', sans-serif;
+    --ft-secondary: 'Overpass', sans-serif;
+    /* colors */
+    --clr-primary-200: hsl(355, 100%, 74%); /* CTA hover bg */
+    --clr-primary-400: hsl(356, 100%, 66%); /* CTA text */
+    --clr-primary-600: hsl(208, 49%, 24%); /* headings */
+    --clr-neutral-000: hsl(0, 0%, 100%);
+    --clr-neutral-100: hsl(240, 2%, 79%); /* footer text */
+    --clr-neutral-300: hsl(207, 13%, 34%);
+    --clr-neutral-500: hsl(240, 10%, 16%);
+    --clr-gradient-200: hsl(13, 100%, 72%);
+    --clr-gradient-400: hsl(353, 100%, 62%);
+    --clr-gradient-500: hsl(237, 23%, 32%);
+    --clr-gradient-600: hsl(237, 17%, 21%);
+}
+
+body {
+    font-size: 16px;
+}
+
+/* --- header --- */
+#header {
+    position: relative;
+    background: linear-gradient(to bottom right, var(--clr-gradient-200), var(--clr-gradient-400)), url("../images/bg-pattern-intro-mobile.svg");
+    border-bottom-left-radius: 5rem;
+}
+
+.header__container {
+    position: relative;
+    padding: 3.5em 1.5em;
+}
+
+/* #header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/bg-pattern-intro-mobile.svg) top/100% 100% fixed no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    z-index: 100;
+} */
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+.header__menu__icon {
+    width: 30px;
+    height: auto;
+    margin: auto 0;
+}
+
+.header__menu__icon.open {
+    background: url(../images/icon-hamburger.svg) no-repeat;
+    height: 1.15em;
+}
+
+.close {
+    background: url(../images/icon-close.svg) no-repeat;
+    height: 1.6em;
+}
+
+.header__menu {
+    font-family: var(--ft-primary);
+    font-weight: 500;
+    background: var(--clr-neutral-000);
+    padding: 1.5em;
+    border-radius: 0.25em;
+    margin-top: 2em;
+}
+
+.header__menu ul li {
+    display: block;
+    font-size: 1.2em;
+    color: var(--clr-neutral-300);
+    text-align: center;
+    line-height: 2em;
+}
+
+.header__menu ul li:first-child:after,
+.header__menu ul li:nth-child(2):after,
+.header__menu ul li:nth-child(3):after {
+    display: inline-block;
+    content: '';
+    position: relative;
+    background: url(../images/icon-arrow-dark.svg) center no-repeat;
+    height: 10px;
+    width: 10px;
+    margin: auto;
+}
+
+
+.header__menu ul {
+    list-style-type: none;
+}
+
+.header__menu ul li ul {
+    display: none;
+}
