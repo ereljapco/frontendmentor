@@ -238,3 +238,67 @@ body {
     line-height: 1.74em;
     padding: 0 2.7em;
 }
+
+/* --- infrastructure */
+.infrastructure {
+    position: relative;
+    color: var(--clr-neutral-000);
+    background: url(../images/bg-pattern-circles.svg) 50% -14.8em/160vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
+    padding: 13.85em 2em 7.5em 2em;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.infrastructure__illustration {
+    position: absolute;
+    inset: -11em 0 0 0;
+}
+
+.infrastructure__illustration img {
+    width: 100vw;
+}
+
+.infrastructure__h {
+    font-size: 2.51em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.infrastructure__p {
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+/* --- other info */
+.other-info {
+    padding: 3.6em 2.5em 0 2.5em;
+}
+
+.other-info__illustration {
+    margin-bottom: 2em;
+}
+
+.other-info__illustration img {
+    width: 130vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.simple {
+    margin-bottom: 2.6em;
+}
+
+.simple__h,
+.tooling__h {
+    color: var(--clr-primary-600);
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 0.9em;
+}
+
+.simple__p,
+.tooling__p {
+    color: var(--clr-neutral-300);
+    font-weight: 300;
+    line-height: 1.7em;
+}
