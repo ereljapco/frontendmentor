@@ -196,7 +196,7 @@ body {
 }
 /* --- for the future */
 .for-the-future {
-    padding: 6em 0;
+    padding: 6em 0 16em 0;
 }
 
 .for-the-future__illustration {
@@ -273,18 +273,23 @@ body {
 
 /* --- other info */
 .other-info {
-    padding: 3.6em 2.5em 6em 2.5em;
+    padding: 3.6em 0 6em 0;
 }
 
 .other-info__illustration {
     margin-bottom: 2em;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .other-info__illustration img {
     width: 130vw;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.simple,
+.tooling {
+    padding: 0 2.5em 0 2.5em;
 }
 
 .simple {
@@ -308,8 +313,6 @@ body {
 
 /* --- footer --- */
 .footer {
-    display: grid;
-    justify-content: center;
     font-family: var(--ft-primary);
     text-align: center;
     background-color: var(--clr-neutral-500);
@@ -318,7 +321,7 @@ body {
 }
 
 .footer__logo {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     overflow: hidden;
 }
 
@@ -342,7 +345,7 @@ body {
 }
 
 .footer-nav__link {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--clr-neutral-100);
     text-decoration: none;
 }
