@@ -22,12 +22,12 @@
         <div class="header__logo">
           <img src="assets/images/logo.svg" alt="Blogr logo">
         </div>
-        <div class="header__menu__icon icon--open"></div>
+        <div class="header__nav-icon header__nav-icon--open"></div>
       </div>
-      <nav class="header__menu menu--close">
-        <ul>
-          <li class="header__menu-item">Product
-            <ul class="header__submenu menu--close">
+      <nav class="header__nav header__nav--close">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">Product
+            <ul class="header__subnav-list header__subnav-list--close">
               <li><a href="#">Overview</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Marketplace</a></li>
@@ -35,79 +35,79 @@
               <li><a href="#">Integrations</a></li>
             </ul>
           </li>
-          <li>Company
-            <ul class="header__submenu menu--close">
+          <li class="header__nav-item">Company
+            <ul class="header__subnav-list header__subnav-list--close">
               <li><a href="#">About</a></li>
               <li><a href="#">Team</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
           </li>
-          <li>Connect
-            <ul class="header__submenu menu--close">
+          <li class="header__nav-item">Connect
+            <ul class="header__subnav-list header__subnav-list--close">
               <li><a href="#">Contact</a></li>
               <li><a href="#">Newsletter</a></li>
               <li><a href="#">LinkedIn</a></li>
             </ul>
           </li>
-          <li>
+          <li class="header__nav-item">
             <!-- <button class="header__menu__btn btn--login">Login</button> -->
-            <a href="#">Login</a>
+            <a class="header__nav-link" href="#">Login</a>
           </li>
-          <li>
-            <button class="header__menu__btn btn--signup">Sign Up</button>
+          <li  class="header__nav-item">
+            <button class="header__nav-btn header__nav-btn--signup">Sign Up</button>
           </li>
         </ul>
       </nav>
-      <section class="intro">
-        <h1 class="intro__h">A modern publishing platform</h1>
-        <p class="intro__p">Grow your audience and build your online brand</p>
-        <button class="intro__btn btn--start">Start for Free</button>
-        <div class="btn--spacer"></div>
-        <button class="intro__btn btn--more">Learn More</button>
+      <section class="header__intro">
+        <h1 class="header__intro-title">A modern publishing platform</h1>
+        <p class="header__intro-description">Grow your audience and build your online brand</p>
+        <button class="header__intro-btn header__intro-btn--start">Start for Free</button>
+        <div class="header__intro-btn--spacer"></div>
+        <button class="header__intro-btn header__intro-btn--more">Learn More</button>
       </section>
     </header>
     <main class="main">
-      <section class="for-the-future">
-        <h2 class="for-the-future__h">Designed for the future</h1>
-        <div class="for-the-future__illustration">
+      <section class="main__future">
+        <h2 class="main__future-title">Designed for the future</h1>
+        <div class="main__future-illustration">
           <img src="assets/images/illustration-editor-mobile.svg" alt="">
         </div>
-        <section class="for-the-future__editor">
-          <h3 class="editor__h">Introducing an extensible editor</h1>
-          <p class="editor__p">
+        <section class="main__editor">
+          <h3 class="main__editor-title">Introducing an extensible editor</h1>
+          <p class="main__editor-description">
             Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
           </p>
         </section>
-        <section class="for-the-future__content-management">
-          <h3 class="content-management__h">Robust content management</h3>
-          <p class="content-management__p">
+        <section class="main__content-mgmt">
+          <h3 class="main__content-mgmt-title">Robust content management</h3>
+          <p class="main__content-mgmt-description">
             Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
         </section>
       </section>
-      <section class="infrastructure">
-        <div class="infrastructure__illustration">
+      <section class="main__infra">
+        <div class="main__infra-illustration">
           <img src="assets/images/illustration-phones.svg" alt="">
         </div>
-        <h2 class="infrastructure__h">State of the Art Infrastructure</h1>
-        <p class="infrastructure__p">
+        <h2 class="main__infra-title">State of the Art Infrastructure</h1>
+        <p class="main__infra-description">
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
         </p>
       </section>
-      <div class="other-info">
-        <div class="other-info__illustration">
+      <div class="main__other-info">
+        <div class="main__other-info-illustration">
           <img src="assets/images/illustration-laptop-mobile.svg" alt="">
         </div>
-        <section class="simple">
-          <h3 class="simple__h">Free, open, simple</h3>
-          <p class="simple__p">
+        <section class="main__simple">
+          <h3 class="main__simple-title">Free, open, simple</h3>
+          <p class="main__simple-description">
             Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.        
           </p>
         </section>
-        <section class="tooling">
-          <h3 class="tooling__h">Powerful tooling</h3>
-          <p class="tooling__p">
+        <section class="main__tooling">
+          <h3 class="main__tooling-title">Powerful tooling</h3>
+          <p class="main__tooling-description">
             Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
           </p>
         </section>
@@ -117,31 +117,31 @@
       <div class="footer__logo">
         <img src="assets/images/logo.svg" alt="">
       </div>
-      <nav class="footer-nav">
-        <h3 class="footer-nav__title">Product</h3>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Overview</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Pricing</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Marketplace</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Features</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Integrations</a></li>
+      <nav class="footer__nav">
+        <h3 class="footer__nav-title">Product</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Overview</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Features</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Marketplace</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Integrations</a></li>
         </ul>
-        <h3 class="footer-nav__title">Company</h3>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">About</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Team</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Careers</a></li>
+        <h3 class="footer__nav-title">Company</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">About</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Team</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Blog</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Careers</a></li>
         </ul>
-        <h3 class="footer-nav__title">Connect</h3>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Newsletter</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">LinkedIn</a></li>
+        <h3 class="footer__nav-title">Connect</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Contact</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Newsletter</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">LinkedIn</a></li>
         </ul>
       </nav>
       <div class="footer__attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Erel Ropeta</a>
+        Challenge by <a class="footer__attribution-link"href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="footer__attribution-link" href="#">Erel Ropeta</a>
       </div>
     </footer>
   </body>
