@@ -347,6 +347,41 @@ body {
     line-height: 1.7em;
 }
 
+/* --- other info */
+.main__other-info {
+    padding: 4.5em 0 6em 0;
+}
+
+.main__other-info-illustration {
+    background: url("../images/illustration-laptop-mobile.svg") center/31em no-repeat;
+    height: 21em;
+    margin-bottom: 3em;
+}
+
+.main__simple,
+.main__tooling {
+    padding: 0 2.5em 0 2.5em;
+}
+
+.main__simple {
+    margin-bottom: 2.55em;
+}
+
+.main__simple-title,
+.main__tooling-title {
+    color: var(--clr-primary-600);
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 0.9em;
+}
+
+.main__simple-description,
+.main__tooling-description {
+    color: var(--clr-neutral-300);
+    font-weight: 300;
+    line-height: 1.76em;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         /* position: relative; */
@@ -575,21 +610,22 @@ body {
 
     /* --- infrastructure */
     .main__infra {
-        text-align: left;
+        position: relative;
         background: url("../images/bg-pattern-circles.svg") -51% -32em/70.7vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
+        text-align: left;
         padding-top: 7.2em;
         padding-left: min(46em, 60vw);
         padding-bottom: 6.55em;
         padding-right: 9em;
+        /* padding: 0; */
         border-top-right-radius: 6.5em;
         border-bottom-left-radius: 6.5rem;
     }
 
     .main__infra-illustration {
-        background: url("../images/illustration-phones.svg") center/34.45em no-repeat;
-        /* width: 90%; */
-        height: 35em;
         position: absolute;
+        background: url("../images/illustration-phones.svg") center/34.45em no-repeat;
+        height: 35em;
         inset: -3.8em 0 0 -44.7%;
     }
     
@@ -602,46 +638,45 @@ body {
         line-height: 1.75em;
         letter-spacing: 0.033em;
     }
-}
 
-/* --- other info */
-.main__other-info {
-    padding: 3.6em 0 6em 0;
-}
-
-.main__other-info-illustration {
-    margin-bottom: 2em;
-    overflow: hidden;
-}
-
-.main__other-info-illustration img {
-    width: 130vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.main__simple,
-.main__tooling {
-    padding: 0 2.5em 0 2.5em;
-}
-
-.main__simple {
-    margin-bottom: 2.6em;
-}
-
-.main__simple-title,
-.main__tooling-title {
-    color: var(--clr-primary-600);
-    font-weight: 500;
-    font-size: 1.7em;
-    margin-bottom: 0.9em;
-}
-
-.main__simple-description,
-.main__tooling-description {
-    color: var(--clr-neutral-300);
-    font-weight: 300;
-    line-height: 1.76em;
+    /* --- other info */
+    .main__other-info {
+        position: relative;
+        text-align: left;
+        padding-top: 19.0455em;
+        padding-left: min(46em, 60vw);
+        padding-bottom: 18.85em;
+        padding-right: 10em;
+    }
+    
+    .main__other-info-illustration {
+        position: absolute;
+        background: url("../images/illustration-laptop-desktop.svg") -59.5%/60.85em no-repeat;
+        height: 50em;
+        inset: 6.81em 0 0 0;
+        margin-bottom: 0;
+    }
+    
+    .main__simple,
+    .main__tooling {
+        padding: 0;
+    }
+    
+    .main__simple {
+        margin-bottom: 4.7em;
+    }
+    
+    .main__simple-title,
+    .main__tooling-title {
+        font-size: 1.75em;
+        margin-bottom: 0.85em;
+    }
+    
+    .main__simple-description,
+    .main__tooling-description {
+        letter-spacing: 00.033em;
+        line-height: 1.75em;
+    }
 }
 
 /* --- footer --- */
