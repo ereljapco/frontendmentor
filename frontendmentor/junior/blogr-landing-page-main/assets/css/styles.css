@@ -251,6 +251,60 @@ body {
     height: 2.8em;
 }
 
+/* --- main --- */
+.main {
+    font-family: var(--ft-secondary);
+    text-align: center;
+}
+/* --- for the future */
+.main__future {
+    padding: 6em 0 16em 0;
+}
+
+.main__future-title {
+    margin-bottom: 1.7em;
+}
+
+.main__future-illustration {
+    background: url("../images/illustration-editor-mobile.svg") center no-repeat;
+    width: 100%;
+    height: 21em;
+    margin-bottom: 2.5em;
+}
+
+.main__future-illustration img {
+    width: 109vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__editor {
+    margin-bottom: 2.5em;
+}
+
+.main__future-title,
+.main__editor-title,
+.main__content-mgmt-title {
+    color: var(--clr-primary-600);
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.main__editor-title,
+.main__content-mgmt-title {
+    margin-bottom: 0.5em;
+    padding: 0 2.7em;
+}
+
+.main__editor-description,
+.main__content-mgmt-description {
+    color: var(--clr-neutral-300);
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.74em;
+    padding: 0 2.7em;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         /* position: relative; */
@@ -324,7 +378,6 @@ body {
     .header__nav-title--open:after,
     .header__nav-title--open:after {
         background: url(../images/icon-arrow-light.svg) center no-repeat;
-        /* margin: auto 0.5em; */
     }
 
     .header__nav-item {
@@ -344,7 +397,6 @@ body {
 
     .header__subnav-list {
         position: absolute;
-        /* list-style: none; */
         top: 3.75em;
         left: -1.69em;
         text-align: left;
@@ -378,8 +430,6 @@ body {
         color: var(--clr-neutral-050);
         font-weight: 700;
         font-size: 1em;
-        /* text-decoration: none;
-        line-height: 2.5em; */
     }
 
     .header__nav-btn-link:hover {
@@ -389,15 +439,9 @@ body {
 
     .header__nav-btn-signup {
         color: var(--clr-primary-400);
-        /* font-family: var(--ft-primary); */
-        /* font-weight: 500; */
-        /* font-size: 1em; */
         width: 9em;
         height: 3.15em;
-        /*padding: auto; */
         background-image: none;
-        /* border: none;
-        border-radius: 2.5em; */
     }
 
     .header__nav-btn-signup:hover {
@@ -405,9 +449,6 @@ body {
     }
 
     .header__intro {
-        /* color: var(--clr-neutral-000);
-        font-family: var(--ft-secondary);
-        text-align: center; */
         padding: 0;
     }
 
@@ -433,58 +474,58 @@ body {
         height: 3em;
         border-radius: 2.5em;
     }
-}
 
-/* --- main --- */
-.main {
-    font-family: var(--ft-secondary);
-    text-align: center;
-}
-/* --- for the future */
-.main__future {
-    padding: 6em 0 16em 0;
-}
+    /* --- main --- */
+    .main {
+        /* font-family: var(--ft-secondary);
+        text-align: center; */
+    }
 
-.main__future-title {
-    margin-bottom: 1.7em;
-}
+    .main__future {
+        position: relative;
+        padding: 9.75em 0 16em 0;
+    }
 
-.main__future-illustration {
-    margin-bottom: 2.5em;
-    overflow: hidden;
-}
+    .main__future-title {
+        grid-area: future-title;
+        font-size: 2.35em;
+        margin-bottom: 2.76em;
+    }
 
-.main__future-illustration img {
-    width: 109vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
+    .main__future-illustration {
+        position: absolute;
+        background: url("../images/illustration-editor-desktop.svg") center/64vw no-repeat;
+        margin-bottom: 0;
+        height: 61em;;
+        top: 2em;
+        right: -36.9%;
+        z-index: 1;
+    }
+    
+    .main__editor,
+    .main__content-mgmt {
+        text-align: left;
+        margin-bottom: 0;
+        padding: 0 51.3vw 0 11.5vw;
+    }
+    
+    .main__editor-title,
+    .main__content-mgmt-title {
+        font-size: 1.75em;
+        margin-bottom: 0.8883em;
+        padding: 0;
+    }
 
-.main__editor {
-    margin-bottom: 2.5em;
-}
-
-.main__future-title,
-.main__editor-title,
-.main__content-mgmt-title {
-    color: var(--clr-primary-600);
-    font-weight: 500;
-    font-size: 1.7em;
-}
-
-.main__editor-title,
-.main__content-mgmt-title {
-    margin-bottom: 0.5em;
-    padding: 0 2.7em;
-}
-
-.main__editor-description,
-.main__content-mgmt-description {
-    color: var(--clr-neutral-300);
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 1.74em;
-    padding: 0 2.7em;
+    .main__editor-description {
+        margin-bottom: 4.7em;
+    }
+    
+    .main__editor-description,
+    .main__content-mgmt-description {
+        letter-spacing: 0.029em;
+        line-height: 1.75em;
+        padding: 0;
+    }
 }
 
 /* --- infrastructure */
