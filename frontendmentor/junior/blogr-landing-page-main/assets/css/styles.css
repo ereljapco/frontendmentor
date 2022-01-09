@@ -329,15 +329,11 @@ body {
 }
 
 .main__infra-illustration {
-    background: url("../images/illustration-phones.svg") center/101vw no-repeat;
-    width: 100%;
+    background: url("../images/illustration-phones.svg") center/23.7em no-repeat;
+    /* width: 90%; */
     height: 23.5em;
     position: absolute;
     inset: -11em 0 0 0;
-}
-
-.main__infra-illustration img {
-    width: 100vw;
 }
 
 .main__infra-title {
@@ -575,6 +571,36 @@ body {
         letter-spacing: 0.029em;
         line-height: 1.75em;
         padding: 0;
+    }
+
+    /* --- infrastructure */
+    .main__infra {
+        text-align: left;
+        background: url("../images/bg-pattern-circles.svg") -51% -32em/70.7vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
+        padding-top: 7.2em;
+        padding-left: min(46em, 60vw);
+        padding-bottom: 6.55em;
+        padding-right: 9em;
+        border-top-right-radius: 6.5em;
+        border-bottom-left-radius: 6.5rem;
+    }
+
+    .main__infra-illustration {
+        background: url("../images/illustration-phones.svg") center/34.45em no-repeat;
+        /* width: 90%; */
+        height: 35em;
+        position: absolute;
+        inset: -3.8em 0 0 -44.7%;
+    }
+    
+    .main__infra-title {
+        font-size: 2.4em;
+        margin-bottom: 0.5em;
+    }
+    
+    .main__infra-description {
+        line-height: 1.75em;
+        letter-spacing: 0.033em;
     }
 }
 
