@@ -382,6 +382,71 @@ body {
     line-height: 1.76em;
 }
 
+/* --- footer --- */
+.footer {
+    font-family: var(--ft-primary);
+    text-align: center;
+    background-color: var(--clr-neutral-500);
+    padding: 4.5em 0 2em 0;
+    border-top-right-radius: 5rem;
+}
+
+.footer__logo {
+    margin-bottom: 5em;
+    overflow: hidden;
+}
+
+.footer__logo img {
+    height: 2.5em;
+}
+
+.footer__nav-list {
+    list-style: none;
+}
+
+.footer__nav-title {
+    color: var(--clr-neutral-000);
+    font-weight: 500;
+    margin-bottom: 1.1em;
+}
+
+.footer__subnav-list {
+    list-style: none;
+    margin-bottom: 2.7em;
+}
+
+.footer__subnav-item {
+    line-height: 2em;
+}
+
+.footer__subnav-link {
+    font-size: 1.1em;
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+}
+
+.footer__subnav-link:hover,
+.footer__subnav-link:focus {
+    text-decoration: underline;
+}
+
+.footer__attribution {
+    color: var(--clr-neutral-000);
+    font-family: var(--ft-secondary);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.footer__attribution-link {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+}
+
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         /* position: relative; */
@@ -554,12 +619,6 @@ body {
         border-radius: 2.5em;
     }
 
-    /* --- main --- */
-    .main {
-        /* font-family: var(--ft-secondary);
-        text-align: center; */
-    }
-
     /* --- for the future */
 
     .main__future {
@@ -575,12 +634,10 @@ body {
 
     .main__future-illustration {
         position: absolute;
-        background: url("../images/illustration-editor-desktop.svg") center/64vw no-repeat;
+        background: url("../images/illustration-editor-desktop.svg") 152.5%/64.1vw no-repeat;
         margin-bottom: 0;
-        height: 61em;;
-        top: 2em;
-        right: -36.9%;
-        z-index: 1;
+        height: 61em;
+        inset: 1.4375em 0 0 0;
     }
     
     .main__editor,
@@ -677,69 +734,53 @@ body {
         letter-spacing: 00.033em;
         line-height: 1.75em;
     }
-}
 
-/* --- footer --- */
-.footer {
-    font-family: var(--ft-primary);
-    text-align: center;
-    background-color: var(--clr-neutral-500);
-    padding: 4.5em 0 2em 0;
-    border-top-right-radius: 5rem;
-}
+    /* --- footer --- */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+            "logo        footer-nav"
+            "attribution footer-nav";
+        text-align: left;
+        padding: 4.5em 9.2em 2.7em 10.5em;
+    }
 
-.footer__logo {
-    margin-bottom: 5em;
-    overflow: hidden;
-}
-
-.footer__logo img {
-    height: 2.5em;
-}
-
-.footer__nav-title {
-    color: var(--clr-neutral-000);
-    font-weight: 500;
-    margin-bottom: 1.1em;
-}
-
-.footer__nav-list {
-    list-style: none;
-    margin-bottom: 2.7em;
-}
-
-.footer__nav-item {
-    line-height: 2em;
-}
-
-.footer__nav-link {
-    font-size: 1.1em;
-    color: var(--clr-neutral-100);
-    text-decoration: none;
-}
-
-.footer__nav-link:hover,
-.footer__nav-link:focus {
-    text-decoration: underline;
-}
-
-.footer__attribution {
-    color: var(--clr-neutral-000);
-    font-family: var(--ft-secondary);
-    font-weight: 300;
-    font-size: 0.9em;
-}
-
-.footer__attribution-link {
-    color: var(--clr-neutral-100);
-    text-decoration: none;
-}
-
-.footer__attribution-link:hover,
-.footer__attribution-link:focus {
-    text-decoration: underline;
-}
-
-@media screen and (min-width: 1024px) {
+    .footer__logo {
+        grid-area: logo;
+        margin-bottom: 2em;
+        overflow: hidden;
+    }
     
+    .footer__logo img {
+        height: 2.5em;
+    }
+
+    .footer__nav {
+        grid-area: footer-nav;
+    }
+
+    .footer__nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__nav-title {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    /* .footer__subnav-list {
+        padding-left: 1em;
+    } */
+
+    .footer__subnav-item {
+        font-size: 0.9em;
+    }
+
+    .footer__attribution {
+        grid-area: attribution;
+        padding-right: 3em;
+    }
 }
