@@ -2,7 +2,7 @@
 
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3c04f71c-3bd7-40b2-ac47-47d85463dd00/deploy-status)](https://app.netlify.com/sites/epic-northcutt-fa0ffe/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3c04f71c-3bd7-40b2-ac47-47d85463dd00/deploy-status)](https://app.netlify.com/sites/blogr-landing-page-byer/deploys)
 
 ## Table of contents
 
@@ -92,5 +92,3 @@ The sizing and positiong of the SVG files was really a challenge for me. Through
 - Github - [https://github.com/erelita/](https://github.com/erelita/)
 - LinkedIn - [https://www.linkedin.com/in/erelropeta/](https://www.linkedin.com/in/erelropeta/)
 - Frontend Mentor - [https://www.frontendmentor.io/profile/erelita](https://www.frontendmentor.io/profile/erelita)
-
-## Acknowledgments
