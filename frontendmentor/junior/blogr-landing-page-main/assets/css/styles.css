@@ -9,12 +9,12 @@
     --ft-primary: 'Ubuntu', sans-serif;
     --ft-secondary: 'Overpass', sans-serif;
     /* colors */
-    --clr-primary-200: hsl(355, 100%, 74%); /* CTA hover bg */
-    --clr-primary-400: hsl(356, 100%, 66%); /* CTA text */
-    --clr-primary-600: hsl(208, 49%, 24%); /* headings */
+    --clr-primary-200: hsl(355, 100%, 74%);
+    --clr-primary-400: hsl(356, 100%, 66%);
+    --clr-primary-600: hsl(208, 49%, 24%);
     --clr-neutral-000: hsl(0, 0%, 100%);
     --clr-neutral-050: hsl(240, 7%, 94%);
-    --clr-neutral-100: hsl(240, 2%, 79%); /* footer text */
+    --clr-neutral-100: hsl(240, 2%, 79%);
     --clr-neutral-300: hsl(207, 13%, 34%);
     --clr-neutral-500: hsl(240, 10%, 16%);
     --clr-gradient-200: hsl(13, 100%, 72%);
@@ -33,14 +33,14 @@ body {
     background: url("../images/bg-pattern-intro-mobile.svg") 35.5% 34%/350vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-200), var(--clr-gradient-400));
     background-repeat: no-repeat;
     padding: 3.5em 1.5em 9.8em 1.5em;
-    border-bottom-left-radius: 5rem;
+    border-bottom-left-radius: 6.4em;
 }
 
 .header__top {
     display: flex;
     justify-content: space-between;
     height: 2em;
-    margin-bottom: 7em;
+    margin-bottom: 7.1em;
 }
 
 .header__logo img {
@@ -54,12 +54,12 @@ body {
 }
 
 .header__nav-icon--open {
-    background: url(../images/icon-hamburger.svg) no-repeat;
+    background: url("../images/icon-hamburger.svg") no-repeat;
     height: 1.15em;
 }
 
 .header__nav-icon--close {
-    background: url(../images/icon-close.svg) no-repeat;
+    background: url("../images/icon-close.svg") no-repeat;
     height: 1.6em;
 }
 
@@ -120,7 +120,7 @@ body {
     display: inline-block;
     content: '';
     position: relative;
-    background: url(../images/icon-arrow-dark.svg) center no-repeat;
+    background: url("../images/icon-arrow-dark.svg") center no-repeat;
     height: 10px;
     width: 10px;
     margin: auto 0.5em;
@@ -132,7 +132,7 @@ body {
     display: inline-block;
     content: '';
     position: relative;
-    background: url(../images/icon-arrow-dark.svg) center no-repeat;
+    background: url("../images/icon-arrow-dark.svg") center no-repeat;
     height: 10px;
     width: 10px;
     margin: auto 0.5em;
@@ -203,13 +203,13 @@ body {
 .header__intro-title {
     font-size: 2.12em;
     font-weight: 500;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
 }
 
 .header__intro-description {
     font-size: 1.1em;
     font-weight: 300;
-    margin-bottom: 1.6em;
+    margin-bottom: 1.7em;
 }
 
 .header__intro-btn {
@@ -218,7 +218,7 @@ body {
     font-weight: 700;
     padding: auto;
     width: 8.6em;
-    height: 2.8em;
+    height: 3em;
     border-radius: 2.5em;
 }
 
@@ -262,18 +262,17 @@ body {
 }
 /* --- for the future */
 .main__future {
-    padding: 6em 0 16.75em 0;
+    padding: 6.3em 0 16.75em 0;
 }
 
 .main__future-title {
-    margin-bottom: 1.7em;
+    margin-bottom: 1.6em;
 }
 
 .main__future-illustration {
-    background: url("../images/illustration-editor-mobile.svg") center no-repeat;
-    width: 100%;
-    height: 21em;
-    margin-bottom: 2.5em;
+    background: url("../images/illustration-editor-mobile.svg") center/max(23.44em, 60vw) no-repeat;
+    height: max(21em, 50vw);
+    margin-bottom: 2.75em;
 }
 
 .main__future-illustration img {
@@ -310,30 +309,28 @@ body {
     font-weight: 300;
     font-size: 1em;
     line-height: 1.74em;
-    padding: 0 2.7em;
+    padding: 0 max(2.7em, 11.52vw);
 }
 
 /* --- infrastructure */
 .main__infra {
     position: relative;
     color: var(--clr-neutral-000);
-    background: url(../images/bg-pattern-circles.svg) 50% -14.8em/160vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
-    /* padding: 13.85em 2em 7.5em 2em; */
-    padding-top: 13.85em;
-    /* padding-top: 84vw; */
-    padding-left: 2em;
-    padding-bottom: 7.5em;
-    padding-right: 2em;
-    border-top-right-radius: 5rem;
-    border-bottom-left-radius: 5rem;
+    background: url("../images/bg-pattern-circles.svg") 50% -14.8em/160vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
+    padding-top: max(13.89em, 35vw);
+    padding-left: 0;
+    padding-bottom: 7.1em;
+    padding-right: 0;
+    border-top-right-radius: 6.4em;
+    border-bottom-left-radius: 6.4em;
 }
 
 .main__infra-illustration {
-    background: url("../images/illustration-phones.svg") center/23.7em no-repeat;
-    /* width: 90%; */
-    height: 23.5em;
     position: absolute;
+    background: url("../images/illustration-phones.svg") center/max(23.8em, 55vw) no-repeat;
+    height: max(23.5em, 55vw);
     inset: -11em 0 0 0;
+    overflow: hidden;
 }
 
 .main__infra-title {
@@ -344,7 +341,8 @@ body {
 
 .main__infra-description {
     font-weight: 300;
-    line-height: 1.7em;
+    line-height: 1.75em;
+    padding: 0 max(2em, 8.53vw);
 }
 
 /* --- other info */
@@ -353,9 +351,10 @@ body {
 }
 
 .main__other-info-illustration {
-    background: url("../images/illustration-laptop-mobile.svg") center/31em no-repeat;
-    height: 21em;
+    background: url("../images/illustration-laptop-mobile.svg") center/max(31em, 70vw) no-repeat;
+    height: max(21em, 50vw);
     margin-bottom: 3em;
+    overflow: hidden;
 }
 
 .main__simple,
@@ -387,12 +386,12 @@ body {
     font-family: var(--ft-primary);
     text-align: center;
     background-color: var(--clr-neutral-500);
-    padding: 4.5em 0 2em 0;
-    border-top-right-radius: 5rem;
+    padding: 4.5em 0 1em 0;
+    border-top-right-radius: 6.4em;
 }
 
 .footer__logo {
-    margin-bottom: 5em;
+    margin-bottom: 4.8em;
     overflow: hidden;
 }
 
@@ -416,7 +415,7 @@ body {
 }
 
 .footer__subnav-item {
-    line-height: 2em;
+    line-height: 2.15em;
 }
 
 .footer__subnav-link {
@@ -451,7 +450,6 @@ body {
     .header {
         background: url("../images/bg-pattern-intro-desktop.svg") 24.1% 52.3%/216vw no-repeat, linear-gradient(to right, var(--clr-gradient-200), var(--clr-gradient-400));
         padding: 3.75em 11.25vw 9.7em 11.6vw;
-        border-bottom-left-radius: 7em;
     }
 
     .header__top {
@@ -669,8 +667,6 @@ body {
         padding-left: min(46em, 60vw);
         padding-bottom: 6.55em;
         padding-right: 9em;
-        border-top-right-radius: 6.5em;
-        border-bottom-left-radius: 6.5rem;
     }
 
     .main__infra-illustration {
@@ -689,6 +685,7 @@ body {
     .main__infra-description {
         line-height: 1.75em;
         letter-spacing: 0.031em;
+        padding: 0;
     }
 
     /* --- other info */
@@ -744,7 +741,6 @@ body {
         padding-right: max(9.2em, 10.1vw);
         padding-bottom: 2.2em;
         padding-left: 10.5em;
-        border-top-right-radius: 6.4em;
     }
 
     .footer__logo {
