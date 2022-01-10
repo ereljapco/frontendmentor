@@ -584,6 +584,7 @@ body {
         width: 9em;
         height: 3.15em;
         background-image: none;
+        background-color: var(--clr-neutral-000);
     }
 
     .header__nav-btn-signup:hover {
@@ -731,7 +732,7 @@ body {
     
     .main__simple-description,
     .main__tooling-description {
-        letter-spacing: 00.033em;
+        letter-spacing: 00.032em;
         line-height: 1.75em;
     }
 
@@ -744,7 +745,12 @@ body {
             "logo        footer-nav"
             "attribution footer-nav";
         text-align: left;
-        padding: 4.5em 9.2em 2.7em 10.5em;
+        padding: 4.5em 9.2em 3.5em 10.5em;
+        padding-top: 4.4em;
+        padding-right: max(9.2em, 10.1vw);
+        padding-bottom: 2.1em;
+        padding-left: 10.5em;
+        border-top-right-radius: 6.4em;
     }
 
     .footer__logo {
@@ -764,19 +770,20 @@ body {
     .footer__nav-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.7em;
     }
 
     .footer__nav-title {
-        font-size: 1em;
-        font-weight: 500;
+        font-size: 0.93em;
+        margin-top: 0.49em;
+        margin-bottom: 2.55em;
     }
 
-    /* .footer__subnav-list {
-        padding-left: 1em;
-    } */
-
     .footer__subnav-item {
-        font-size: 0.9em;
+        font-size: 0.84em;
+        font-stretch: ultra-condensed;
+        line-height: 1em;
+        margin-bottom: 1.42em;
     }
 
     .footer__attribution {
