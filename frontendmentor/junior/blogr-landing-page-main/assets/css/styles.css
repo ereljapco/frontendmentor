@@ -447,18 +447,14 @@ body {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 57em) {
     .header {
-        /* position: relative; */
         background: url("../images/bg-pattern-intro-desktop.svg") 24.1% 52.3%/216vw no-repeat, linear-gradient(to right, var(--clr-gradient-200), var(--clr-gradient-400));
-        /* padding: 3.8em 10.1em 9.7em 10.3em; */
         padding: 3.75em 11.25vw 9.7em 11.6vw;
         border-bottom-left-radius: 7em;
     }
 
     .header__top {
-        /* display: flex;
-        justify-content: space-between; */
         height: auto;
         padding: 0 0 0 0;
         margin-bottom: 7.75em;
@@ -466,7 +462,7 @@ body {
 
     .header__logo {
         width: 10%;
-        margin: auto;
+        margin: auto 0 auto 0;
     }
 
     .header__logo img {
@@ -484,19 +480,16 @@ body {
         inset: 0 0 0 0;
         font-family: var(--ft-primary);
         font-weight: 500;
-        /* font-size: 1em; */
         background: transparent;
         padding: 0 0 0 0;
         height: 100%;
-        /* border-radius: 0.25em; */
+        width: 90%;
         margin: auto auto auto 3.1em;
-        /* transition: opacity 500ms ease-in-out,
-                    transform 500ms ease-in-out; */
+        transition: none;
         box-shadow: 0 0 0 0 var(--clr-neutral-500);
     }
 
     .header__nav--close {
-        width: 90%;
         height: 100%;
         opacity: 1;
         transform: translateY(0em);
@@ -624,21 +617,22 @@ body {
 
     .main__future {
         position: relative;
-        padding: 9.75em 0 16em 0;
+        padding: 9.66em 0 16em 0;
     }
 
     .main__future-title {
         grid-area: future-title;
-        font-size: 2.35em;
-        margin-bottom: 2.76em;
+        font-size: 2.5em;
+        letter-spacing: -0.033em;
+        margin-bottom: 2.57em;
     }
 
     .main__future-illustration {
         position: absolute;
-        background: url("../images/illustration-editor-desktop.svg") 152.5%/64.1vw no-repeat;
+        background: url("../images/illustration-editor-desktop.svg") 153.2%/min(57.816em, 64.24vw) no-repeat;
         margin-bottom: 0;
         height: 61em;
-        inset: 1.4375em 0 0 0;
+        inset: 1.48em 0 0 0;
     }
     
     .main__editor,
@@ -651,7 +645,7 @@ body {
     .main__editor-title,
     .main__content-mgmt-title {
         font-size: 1.75em;
-        margin-bottom: 0.8883em;
+        margin-bottom: 0.855em;
         padding: 0;
     }
 
@@ -661,7 +655,7 @@ body {
     
     .main__editor-description,
     .main__content-mgmt-description {
-        letter-spacing: 0.029em;
+        letter-spacing: 0.032em;
         line-height: 1.75em;
         padding: 0;
     }
@@ -671,45 +665,45 @@ body {
         position: relative;
         background: url("../images/bg-pattern-circles.svg") -51% -32em/70.7vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-600), var(--clr-gradient-500));
         text-align: left;
-        padding-top: 7.2em;
+        padding-top: 7.24635em;
         padding-left: min(46em, 60vw);
         padding-bottom: 6.55em;
         padding-right: 9em;
-        /* padding: 0; */
         border-top-right-radius: 6.5em;
         border-bottom-left-radius: 6.5rem;
     }
 
     .main__infra-illustration {
         position: absolute;
-        background: url("../images/illustration-phones.svg") center/34.45em no-repeat;
+        background: url("../images/illustration-phones.svg") center/34.46em no-repeat;
         height: 35em;
-        inset: -3.8em 0 0 -44.7%;
+        inset: -3.7em 0 0 -44.3%;
     }
     
     .main__infra-title {
-        font-size: 2.4em;
-        margin-bottom: 0.5em;
+        font-size: 2.5em;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.45em;
     }
     
     .main__infra-description {
         line-height: 1.75em;
-        letter-spacing: 0.033em;
+        letter-spacing: 0.031em;
     }
 
     /* --- other info */
     .main__other-info {
         position: relative;
         text-align: left;
-        padding-top: 19.0455em;
-        padding-left: min(46em, 60vw);
+        padding-top: 19.03em;
+        padding-left: min(46em, 51.11vw);
         padding-bottom: 18.85em;
         padding-right: 10em;
     }
     
     .main__other-info-illustration {
         position: absolute;
-        background: url("../images/illustration-laptop-desktop.svg") -59.5%/60.85em no-repeat;
+        background: url("../images/illustration-laptop-desktop.svg") -59.5%/min(60.85em, 67.61vw) no-repeat;
         height: 50em;
         inset: 6.81em 0 0 0;
         margin-bottom: 0;
@@ -732,7 +726,7 @@ body {
     
     .main__simple-description,
     .main__tooling-description {
-        letter-spacing: 00.032em;
+        letter-spacing: 00.031em;
         line-height: 1.75em;
     }
 
@@ -748,7 +742,7 @@ body {
         padding: 4.5em 9.2em 3.5em 10.5em;
         padding-top: 4.4em;
         padding-right: max(9.2em, 10.1vw);
-        padding-bottom: 2.1em;
+        padding-bottom: 2.2em;
         padding-left: 10.5em;
         border-top-right-radius: 6.4em;
     }
@@ -781,7 +775,6 @@ body {
 
     .footer__subnav-item {
         font-size: 0.84em;
-        font-stretch: ultra-condensed;
         line-height: 1em;
         margin-bottom: 1.42em;
     }
