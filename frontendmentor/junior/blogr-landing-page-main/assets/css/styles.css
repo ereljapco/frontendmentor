@@ -31,7 +31,6 @@ body {
 .header {
     position: relative;
     background: url("../images/bg-pattern-intro-mobile.svg") 35.5% 34%/350vw no-repeat, linear-gradient(to bottom right, var(--clr-gradient-200), var(--clr-gradient-400));
-    background-repeat: no-repeat;
     padding: 3.5em 1.5em 9.8em 1.5em;
     border-bottom-left-radius: 6.4em;
 }
@@ -179,7 +178,6 @@ body {
     font-size: 1em;
     width: 8.5em;
     height: 3.1em;
-    padding: auto;
     background-image: linear-gradient(to right, var(--clr-gradient-200), var(--clr-gradient-400));
     border: none;
     border-radius: 2.5em;
@@ -216,7 +214,6 @@ body {
     font-family: var(--ft-primary);
     font-size: 1em;
     font-weight: 700;
-    padding: auto;
     width: 8.6em;
     height: 3em;
     border-radius: 2.5em;
@@ -273,12 +270,6 @@ body {
     background: url("../images/illustration-editor-mobile.svg") center/max(23.44em, 60vw) no-repeat;
     height: max(21em, 50vw);
     margin-bottom: 2.75em;
-}
-
-.main__future-illustration img {
-    width: 109vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .main__editor {
@@ -539,7 +530,7 @@ body {
         border-radius: 0.25em;
         margin-bottom: 0;
         box-shadow: 0 20px 60px -20px var(--clr-neutral-500);
-
+        
     }
 
     .header__subnav-item {
@@ -605,7 +596,6 @@ body {
         font-family: var(--ft-primary);
         font-size: 1em;
         font-weight: 700;
-        padding: auto;
         width: 8.6em;
         height: 3em;
         border-radius: 2.5em;
