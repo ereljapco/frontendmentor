@@ -1,0 +1,161 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-primary-000: hsl(179, 62%, 43%);
+  --clr-primary-100: hsl(71, 73%, 54%);
+  --clr-neutral-000: hsl(204, 43%, 93%);
+  --clr-neutral-100: hsl(218, 22%, 67%);
+  /* fonts */
+  --ft-primary: "Karla", sans-serif;
+}
+
+body {
+  background: var(--clr-neutral-000);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-grid {
+  width: 310px;
+  border-radius: 5px;
+  font-family: var(--ft-primary);
+  overflow: hidden;
+}
+
+/****
+COMMUNITY
+****/
+.community {
+  background: #fff;
+  padding: 1.75rem 1.6rem;
+}
+
+.community__title {
+  color: var(--clr-primary-000);
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+.community__subtitle {
+  color: var(--clr-primary-100);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.1em;
+}
+
+.community__text {
+  color: var(--clr-neutral-100);
+  font-size: 0.845rem;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+/****
+SUBSCRIPTION
+****/
+.subscription {
+  background: var(--clr-primary-000);
+  padding: 1.6rem 1.6rem 1.5rem 1.6rem;
+  color: #fff;
+}
+
+.subscription__title {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+
+.subscription__price {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.subscription__amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscription__plan {
+  display: flex;
+  align-items: center;
+  margin-left: 0.6rem;
+  color: var(--clr-neutral-000);
+}
+
+.subscription__subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.8em;
+}
+
+.btn-sign-up {
+  width: 100%;
+  height: 3rem;
+  background: var(--clr-primary-100);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: var(--ft-primary);
+  font-size: 1rem;
+  font-weight: 700;
+}
+/****
+WHY US
+****/
+.why-us {
+  background: hsla(179, 62%, 43%, 70%);
+  padding: 1.5rem 1.6rem;
+  color: #fff;
+}
+
+.why-us__title {
+  font-size: 1.1rem;
+  margin-bottom: 1.15em;
+}
+
+.why-us__list {
+  list-style-type: none;
+}
+
+.why-us__list-item {
+  color: var(--clr-neutral-000);
+  font-size: 0.85rem;
+  line-height: 1.45em;
+}
+
+/****
+FOOTER
+****/
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.attribution {
+  color: var(--clr-neutral-100);
+  font-family: var(--ft-primary);
+  font-size: 0.8rem;
+}
+
+.attribution--link {
+  color: var(--clr-primary-000);
+  text-decoration: none;
+}
+
+.attribution--link:hover {
+  text-decoration: underline;
+}
