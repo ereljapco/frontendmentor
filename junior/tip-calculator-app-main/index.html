@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- SPLITTER LOGO -->
+      <!-- <div class="logo"> -->
+        <h1 class="logo" aria-label="Splitter"><img src="assets/images/logo.svg" alt="Splitter Logo"></h1>
+      <!-- </div> -->
+    </header>
+    <main class="calculator">
+      <form name="calculator-form" class="calculator__form">
+        <!-- INPUT -->
+        <div class="calculator__input">
+          <!-- BILL -->
+          <div class="input__bill">
+            <div class="input__label">
+              <div class="input__title">Bill</div>
+              <div class="input__errormsg">Can't be zero</div>
+            </div>
+            <div class="input__container">
+              <div class="input__icon">
+                <img src="assets/images/icon-dollar.svg" alt="">
+              </div>
+              <div class="input__amount">
+                <input name="bill-input" type="number" id="bill-input" placeholder="0" step="0.01">
+              </div>
+            </div>
+          </div>
+          <!-- TIP % -->
+          <div class="input__tip">
+            <div class="input__label input__title">Select Tip %</div>
+            <div class="input__select">
+              <button type="button" name="select-tip" value="5">5%</button>
+              <button type="button" name="select-tip" value="10">10%</button>
+              <button type="button" name="select-tip" value="15">15%</button>
+              <button type="button" name="select-tip" value="25">25%</button>
+              <button type="button" name="select-tip" value="50" >50%</button>
+              <div id="#tip-custom-container" class="input__container">
+                <input type="number" name="select-tip" id="input-tip-custom" placeholder="Custom">
+              </div>
+            </div>
+          </div>
+          <!-- # OF PEOPLE -->
+          <div class="input__people">
+            <div class="input__label">
+              <div class="input__title">Number of People</div>
+              <div class="input__errormsg">Can't be zero</div>
+            </div>
+            <div class="input__container">
+              <div class="input__icon">
+                <img src="assets/images/icon-person.svg" alt="">
+              </div>
+              <div class="input__amount">
+                <input name="people-input" type="number" id="people-input" placeholder="0">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- OUTPUT -->
+        <div class="calculator__output">
+          <!-- TIP/PERSON -->
+          <div class="output__tip">
+            <div class="output__label">
+              <div class="output__label--amount">Tip Amount</div>
+              <div class="output__label--person">/ person</div>
+            </div>
+            <div class="output__amount">
+              $
+              <div class="total__amount">0.00</div>
+            </div>
+          </div>
+          <!-- BILL/PERSON -->
+          <div class="output__total">
+            <div class="output__label">
+              <div class="output__label--amount">Total</div>
+              <div class="output__label--person">/ person</div>
+            </div>
+            <div class="output__amount">
+              $
+              <div class="total__amount">0.00</div>
+            </div>
+          </div>
+          <!-- RESET BUTTON -->
+          <button type="reset" id="reset-button">RESET</button>
+        </div>
+      </form>
+    </main>
+    
+    <!-- <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Erelita</a>.
+    </footer> -->
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
