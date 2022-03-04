@@ -29,7 +29,9 @@ body {
 }
 
 .price-grid {
-  width: 310px;
+  width: 82vw;
+  min-width: 310px;
+  max-width: 635px;
   border-radius: 5px;
   font-family: var(--ft-primary);
   overflow: hidden;
@@ -46,21 +48,33 @@ COMMUNITY
 .community__title {
   color: var(--clr-primary-000);
   font-size: 1.2rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.8rem;
 }
 
 .community__subtitle {
   color: var(--clr-primary-100);
   font-size: 0.9rem;
   font-weight: 700;
-  margin-bottom: 1.1em;
+  margin-bottom: 0.9rem;
 }
 
 .community__text {
   color: var(--clr-neutral-100);
   font-size: 0.845rem;
   font-weight: 400;
-  line-height: 2em;
+  line-height: 1.7rem;
+}
+
+/****
+BOTTOM WRAPPER
+****/
+.bottom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-wrapper > * {
+  flex: 1 1 310px;
 }
 
 /****
@@ -74,14 +88,15 @@ SUBSCRIPTION
 
 .subscription__title {
   font-size: 1.1rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.1rem;
 }
 
 .subscription__price {
   width: 100%;
   display: flex;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
+
 .subscription__amount {
   font-size: 2rem;
   font-weight: 700;
@@ -91,12 +106,13 @@ SUBSCRIPTION
   display: flex;
   align-items: center;
   margin-left: 0.6rem;
-  color: var(--clr-neutral-000);
+  /* color: var(--clr-neutral-000); */
+  color: hsl(179, 63%, 64%);
 }
 
 .subscription__subtitle {
   font-size: 1rem;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.8rem;
 }
 
 .btn-sign-up {
@@ -107,7 +123,7 @@ SUBSCRIPTION
   border-radius: 5px;
   color: #fff;
   font-family: var(--ft-primary);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 /****
