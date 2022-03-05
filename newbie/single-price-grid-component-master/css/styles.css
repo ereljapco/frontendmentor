@@ -113,6 +113,7 @@ SUBSCRIPTION
 .subscription__subtitle {
   font-size: 1rem;
   margin-bottom: 1.8rem;
+  font-weight: 300;
 }
 
 .btn-sign-up {
@@ -126,6 +127,7 @@ SUBSCRIPTION
   font-size: 0.9rem;
   font-weight: 700;
 }
+
 /****
 WHY US
 ****/
@@ -174,4 +176,71 @@ FOOTER
 
 .attribution--link:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  /****
+  COMMUNITY
+  ****/
+  .community {
+    padding: 2.5rem 2.6rem 2.531rem 2.6rem;
+  }
+
+  .community__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.563rem;
+    letter-spacing: -0.013em;
+  }
+
+  .community__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.656rem;
+  }
+
+  .community__text {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.01em;
+  }
+
+  /****
+  SUBSCRIPTION
+  ****/
+  .subscription {
+    padding: 2.563rem 2.5rem 2.435rem 2.6rem;
+  }
+
+  .subscription__title {
+    margin-bottom: 1.125rem;
+  }
+
+  .subscription__price {
+    margin-bottom: 0.44rem;
+  }
+
+  .subscription__subtitle {
+    margin-bottom: 1.875rem;
+  }
+
+  .btn-sign-up {
+    font-size: 0.99rem;
+  }
+
+  /****
+  WHY US
+  ****/
+  .why-us {
+    padding: 2.563rem 2.6rem 2.435rem 2.6rem;
+  }
+
+  .why-us__title {
+    font-size: 1.1rem;
+    margin-bottom: 1.16rem;
+  }
+
+  .why-us__list-item {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.47em;
+  }
 }
