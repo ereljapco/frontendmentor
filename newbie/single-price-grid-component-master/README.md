@@ -14,6 +14,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -27,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/preview.jpg.jpg)
+![](./images/preview.jpg)
 
 ### Links
 
@@ -47,9 +48,11 @@ Users should be able to:
 
 **ARIA**
 
+- Just watched Kevin Powell's video about section elements and made me realized that I haven't read the aria documentation. I probably should in the future. Still greatful that I'm learning to implement aria little by little.
+
 ```html
 <section class="why-us" aria-labelledby="why-us__title">
-  <h2 title="why-us__title" class="why-us__title">Why Us</h2>
+  <h2 id="why-us__title" class="why-us__title">Why Us</h2>
   <ul class="why-us__list">
     <li class="why-us__list-item">Tutorials by industry experts</li>
     <li class="why-us__list-item">Peer & expert code review</li>
@@ -90,6 +93,10 @@ Users should be able to:
 **Responsiveness**
 
 - I realized that I still need to learn and practice more to improve on web responsiveness. I have other solutions on Frontendmentor to which I need to go back to and work on their responsiveness. I am planning to take a course on Udemy which I'm hoping might help me to improve on HTML and CSS.
+
+### Useful resources
+
+- [Kevin Powell's HTML section elements are a lie (sort of)](https://youtu.be/ULdkpU51hTQ) - Proper usage of the section element.
 
 ## Author
 
