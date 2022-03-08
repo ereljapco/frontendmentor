@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --ft-primary: "Raleway", sans-serif;
+  /* colors */
+  --clr-primary-300: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  --clr-neutral-100: hsl(243, 100%, 93%);
+  --clr-neutral-200: hsl(229, 7%, 55%);
+  --clr-neutral-500: hsl(228, 56%, 26%);
+  --clr-neutral-700: hsl(229, 57%, 11%);
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: url("../images/bg-mobile.png") no-repeat fixed center;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.data-storage__nav {
+  background: var(--clr-neutral-500);
+}
+
+.data-storage__nav {
+  width: 325px;
+  padding: 3.5rem 3rem;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.data-storage__nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3.5rem;
+  margin: 2.5rem 4.5rem 0 0;
+}
+
+.data-storage__nav-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-neutral-700);
+  width: 3.5rem;
+  height: 100%;
+  border-radius: 10px;
+}
