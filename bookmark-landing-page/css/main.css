@@ -63,6 +63,10 @@ Global Classes
   color: var(--clr-neutral-900);
 }
 
+.btn--grey:hover {
+  color: var(--clr-grey-500);
+}
+
 /* ===============
 Nav
 =============== */
