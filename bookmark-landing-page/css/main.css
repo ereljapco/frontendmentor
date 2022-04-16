@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===============
+Global Variables
+=============== */
+
+:root {
+  /* primary color */
+  --clr-primary-500: hsl(231, 69%, 60%);
+  /* secondary color */
+  --clr-secondary-500: hsl(0, 94%, 66%);
+  /* neutral */
+  --clr-neutral-500: hsl(229, 8%, 60%);
+  --clr-neutral-900: hsl(229, 31%, 21%);
+  /* font */
+  --ff-primary: font-family: 'Rubik', sans-serif;
+}
