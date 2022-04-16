@@ -150,5 +150,6 @@ Hero
 
 .hero__img-bg {
   position: absolute;
+  top: 4.25rem;
   right: 0;
 }
