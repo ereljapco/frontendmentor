@@ -16,6 +16,7 @@ Global Variables
   /* secondary color */
   --clr-secondary-500: hsl(0, 94%, 66%);
   /* neutral */
+  --clr-grey-50: hsl(240, 10%, 96%);
   --clr-grey-100: hsl(220, 7%, 92%);
   --clr-grey-200: hsl(230, 7%, 84%);
   --clr-grey-300: hsl(228, 8%, 76%);
@@ -65,7 +66,8 @@ Global Classes
 }
 
 .btn--grey {
-  color: var(--clr-neutral-900);
+  color: var(--clr-grey-700);
+  background-color: var(--clr-grey-50);
 }
 
 .btn--grey:hover {
