@@ -168,4 +168,5 @@ Hero
 .hero__text {
   text-align: center;
   padding-inline: 1rem;
+  margin-bottom: 2rem;
 }
