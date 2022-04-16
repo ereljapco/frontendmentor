@@ -32,6 +32,13 @@ Global Variables
 }
 
 /* ===============
+Global Styles
+=============== */
+body {
+  font-family: var(--ff-primary);
+}
+
+/* ===============
 Global Classes
 =============== */
 .img {
