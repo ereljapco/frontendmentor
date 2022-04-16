@@ -38,6 +38,13 @@ body {
   font-family: var(--ff-primary);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr-neutral-500);
+}
+
 /* ===============
 Global Classes
 =============== */
