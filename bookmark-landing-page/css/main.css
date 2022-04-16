@@ -48,7 +48,8 @@ h4 {
 
 p {
   color: var(--clr-grey-500);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 /* ===============
