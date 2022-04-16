@@ -152,4 +152,5 @@ Hero
   position: absolute;
   top: 4.25rem;
   right: 0;
+  border-bottom-left-radius: 6rem;
 }
