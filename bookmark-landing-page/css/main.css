@@ -25,3 +25,13 @@ Global Variables
   /* font */
   --ff-primary: font-family: 'Rubik', sans-serif;
 }
+
+/* ===============
+Nav
+=============== */
+
+/* navbar */
+.navbar__toggle-btn {
+  border-color: transparent;
+  background-color: transparent;
+}
