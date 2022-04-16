@@ -126,3 +126,11 @@ Nav
   background-color: transparent;
   cursor: pointer;
 }
+
+/* ===============
+Hero
+=============== */
+.hero__img {
+  width: 95%;
+  margin-inline: auto;
+}
