@@ -48,6 +48,11 @@ Global Classes
   padding: 0.75rem 1rem;
 }
 
+.btn--primary {
+  color: #fff;
+  background-color: var(--clr-primary-500);
+}
+
 /* ===============
 Nav
 =============== */
