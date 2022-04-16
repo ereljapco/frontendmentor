@@ -65,6 +65,7 @@ Global Classes
 
 .btn--grey:hover {
   color: var(--clr-grey-500);
+  background-color: transparent;
 }
 
 /* ===============
