@@ -139,7 +139,16 @@ Nav
 /* ===============
 Hero
 =============== */
+.hero__img--container {
+  position: relative;
+}
+
 .hero__img {
   width: 93.5%;
   margin-inline: auto;
+}
+
+.hero__img-bg {
+  position: absolute;
+  right: 0;
 }
