@@ -141,6 +141,7 @@ Hero
 =============== */
 .hero__img--container {
   position: relative;
+  margin-bottom: 3.5rem;
 }
 
 .hero__img {
