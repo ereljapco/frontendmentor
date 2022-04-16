@@ -16,7 +16,11 @@ Global Variables
   /* secondary color */
   --clr-secondary-500: hsl(0, 94%, 66%);
   /* neutral */
-  --clr-neutral-500: hsl(229, 8%, 60%);
+  --clr-grey-100: hsl(220, 7%, 92%);
+  --clr-grey-200: hsl(230, 7%, 84%);
+  --clr-grey-300: hsl(228, 8%, 76%);
+  --clr-grey-400: hsl(231, 8%, 68%);
+  --clr-grey-500: hsl(229, 8%, 60%);
   --clr-neutral-900: hsl(229, 31%, 21%);
   /* font */
   --ff-primary: font-family: 'Rubik', sans-serif;
