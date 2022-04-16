@@ -45,6 +45,10 @@ Nav
   justify-content: space-between;
 }
 
+.navbar__logo {
+  height: 1.5rem;
+}
+
 .navbar__toggle-btn {
   font-size: 1.25rem;
   border-color: transparent;
