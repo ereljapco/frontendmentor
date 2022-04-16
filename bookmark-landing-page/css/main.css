@@ -73,6 +73,10 @@ Global Classes
   margin-inline: auto;
 }
 
+.section {
+  margin-bottom: 9.5rem;
+}
+
 .title--center {
   text-align: center;
   margin-bottom: 0.75rem;
