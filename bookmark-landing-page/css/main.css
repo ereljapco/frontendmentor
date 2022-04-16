@@ -70,6 +70,7 @@ Global Classes
 .btn--grey:hover {
   color: var(--clr-grey-700);
   background-color: transparent;
+  border: 2px solid var(--clr-grey-700);
 }
 
 /* ===============
