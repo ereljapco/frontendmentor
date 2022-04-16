@@ -157,3 +157,7 @@ Hero
   border-bottom-left-radius: 6.15rem;
   z-index: -1;
 }
+
+.hero__title {
+  text-align: center;
+}
