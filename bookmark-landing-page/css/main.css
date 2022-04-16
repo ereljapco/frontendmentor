@@ -171,3 +171,8 @@ Hero
   padding-inline: 1rem;
   margin-bottom: 2rem;
 }
+
+.hero__action-btns {
+  display: flex;
+  justify-content: space-between;
+}
