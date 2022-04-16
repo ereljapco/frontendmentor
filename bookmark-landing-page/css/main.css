@@ -27,6 +27,15 @@ Global Variables
 }
 
 /* ===============
+Global Classes
+=============== */
+.img {
+  display: block;
+  width: 100%;
+}
+
+
+/* ===============
 Nav
 =============== */
 
