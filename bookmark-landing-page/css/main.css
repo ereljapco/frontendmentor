@@ -44,6 +44,10 @@ Nav
 =============== */
 
 /* navbar */
+.navbar {
+  margin-top: 2.5rem;
+}
+
 .navbar--container {
   display: flex;
   justify-content: space-between;
