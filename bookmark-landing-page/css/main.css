@@ -53,6 +53,10 @@ Global Classes
   background-color: var(--clr-primary-500);
 }
 
+.btn--primary:hover {
+  color: var(--clr-primary-500);
+}
+
 .btn--grey {
   color: var(--clr-neutral-900);
 }
