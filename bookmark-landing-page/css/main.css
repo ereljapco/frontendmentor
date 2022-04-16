@@ -60,11 +60,11 @@ Global Classes
   width: 100%;
 }
 
-.img--bg {
-  width: 100%;
+.img-bg {
+  position: absolute;
+  width: 80%;
   height: 12rem;
   background-color: var(--clr-primary-500);
-  border-radius: 6rem;
 }
 
 .container--center {
