@@ -73,6 +73,14 @@ Global Classes
   margin-inline: auto;
 }
 
+.title--center {
+  text-align: center;
+}
+
+.text--center {
+  text-align: center;
+}
+
 .btn {
   font-size: 0.86rem;
   font-family: var(--ff-primary);
