@@ -146,6 +146,7 @@ Hero
 .hero__img {
   width: 93.5%;
   margin-inline: auto;
+  z-index: 1;
 }
 
 .hero__img-bg {
@@ -153,4 +154,5 @@ Hero
   top: 4.25rem;
   right: 0;
   border-bottom-left-radius: 6rem;
+  z-index: -1;
 }
