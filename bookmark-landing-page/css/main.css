@@ -32,6 +32,7 @@ Nav
 
 /* navbar */
 .navbar__toggle-btn {
+  font-size: 1.25rem;
   border-color: transparent;
   background-color: transparent;
 }
