@@ -23,7 +23,7 @@ Global Variables
   --clr-grey-500: hsl(229, 8%, 60%);
   --clr-neutral-900: hsl(229, 31%, 21%);
   /* font */
-  --ff-primary: font-family: 'Rubik', sans-serif;
+  --ff-primary: 'Rubik', sans-serif;
 }
 
 /* ===============
@@ -37,6 +37,15 @@ Global Classes
 .container--center {
   width: 85vw;
   margin-inline: auto;
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
 }
 
 /* ===============
