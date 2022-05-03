@@ -193,6 +193,11 @@ Hero
 /* ===============
 Hero
 =============== */
+.features__tabs {
+  display: grid;
+  border-top: 1px solid var(--clr-grey-200);
+}
+
 .features__bookmark-tab,
 .features__search-tab,
 .features__share-tab {
