@@ -294,6 +294,13 @@ Features
   font-size: 1.5rem;
 }
 
+.features__bookmarking-text,
+.features__searching-text,
+.features__sharing-text {
+  width: 85vw;
+  margin-inline: auto;
+}
+
 .features__bookmarking-btn,
 .features__searching-btn,
 .features__sharing-btn {
