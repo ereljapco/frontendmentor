@@ -242,6 +242,10 @@ Features
 }
 
 /* content */
+.features__content {
+  text-align: center;
+}
+
 .features__content-img--container {
   position: relative;
 }
