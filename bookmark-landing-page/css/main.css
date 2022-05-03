@@ -203,6 +203,7 @@ Features
 .features__tabs {
   display: grid;
   border-top: 1px solid var(--clr-grey-200);
+  margin-bottom: 4.5rem;
 }
 
 .features__bookmark-tab,
