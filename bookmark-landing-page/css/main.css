@@ -247,7 +247,7 @@ Features
 }
 
 .features__content-img {
-  width: 85vw;
+  width: 83vw;
   margin-inline: auto;
 }
 
@@ -255,6 +255,6 @@ Features
   top: 2.25rem;
   left: 0;
   z-index: -2;
-  height: 56vw;
+  height: 54vw;
   border-bottom-right-radius: 6.15rem;
 }
