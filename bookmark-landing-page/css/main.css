@@ -318,9 +318,14 @@ Download
   text-align: center;
 }
 
+.download__title {
+  margin-bottom: 0.65rem;
+}
+
 .download__text {
   width: 80vw;
   margin-inline: auto;
+  margin-bottom: 2.5rem;
 }
 
 .download__chrome {
