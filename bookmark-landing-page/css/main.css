@@ -201,6 +201,7 @@ Hero
 .features__bookmark-tab,
 .features__search-tab,
 .features__share-tab {
+  position: relative;
   color: var(--clr-grey-800);
   font-size: 1rem;
   background-color: transparent;
@@ -209,4 +210,25 @@ Hero
   border-right: 1px solid transparent;
   border-bottom: 1px solid var(--clr-grey-200);
   padding-block: 0.75rem;
+}
+
+.features__bookmark-tab::after,
+.features__search-tab::after,
+.features__share-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8rem;
+  height: 0.25rem;
+  background-color: var(--clr-secondary-500);
+  transition: 0.25s ease-in-out all;
+  opacity: 0;
+}
+
+.features__bookmark-tab:hover.features__bookmark-tab::after,
+.features__search-tab:hover.features__search-tab::after,
+.features__share-tab:hover.features__share-tab::after {
+  opacity: 1;
 }
