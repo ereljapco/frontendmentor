@@ -310,3 +310,10 @@ Features
 .features__sharing-btn {
   display: none;
 }
+
+/* ===============
+Download
+=============== */
+.download {
+  text-align: center;
+}
