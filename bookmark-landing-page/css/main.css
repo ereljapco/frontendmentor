@@ -329,4 +329,5 @@ Download
   box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
   -webkit-box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
   -moz-box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
+  margin-inline: auto;
 }
