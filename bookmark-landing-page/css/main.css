@@ -317,3 +317,8 @@ Download
 .download {
   text-align: center;
 }
+
+.download__text {
+  width: 80vw;
+  margin-inline: auto;
+}
