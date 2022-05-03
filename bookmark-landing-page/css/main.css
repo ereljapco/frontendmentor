@@ -326,8 +326,8 @@ Download
 .download__chrome {
   width: 80vw;
   border-radius: 0.75rem;
-  box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
-  -webkit-box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
-  -moz-box-shadow: -1px 7px 11px 0px rgba(77, 95, 148, 0.35);
+  box-shadow: 0px 13px 20px -1px rgba(77, 95, 148, 0.29);
+  -webkit-box-shadow: 0px 13px 20px -1px rgba(77, 95, 148, 0.29);
+  -moz-box-shadow: 0px 13px 20px -1px rgba(77, 95, 148, 0.29);
   margin-inline: auto;
 }
