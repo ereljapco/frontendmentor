@@ -262,3 +262,7 @@ Features
   height: 54vw;
   border-bottom-right-radius: 6.15rem;
 }
+
+.features__content-title {
+  font-size: 1.5rem;
+}
