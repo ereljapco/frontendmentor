@@ -243,6 +243,8 @@ Features
 
 /* content */
 .features__content {
+  display: grid;
+  row-gap: 5rem;
   text-align: center;
 }
 
