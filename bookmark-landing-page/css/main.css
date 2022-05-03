@@ -189,3 +189,16 @@ Hero
   display: flex;
   justify-content: space-between;
 }
+
+/* ===============
+Hero
+=============== */
+.features__bookmark-tab,
+.features__search-tab,
+.features__share-tab {
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--clr-grey-100);
+}
