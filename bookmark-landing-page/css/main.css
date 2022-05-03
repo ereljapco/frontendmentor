@@ -192,11 +192,13 @@ Hero
 }
 
 /* ===============
-Hero
+Features
 =============== */
 .features__info {
   margin-bottom: 2.5rem;
 }
+
+/* tabs */
 
 .features__tabs {
   display: grid;
@@ -236,4 +238,10 @@ Hero
 .features__search-tab:hover.features__search-tab::after,
 .features__share-tab:hover.features__share-tab::after {
   opacity: 1;
+}
+
+/* content */
+.features__content-img {
+  width: 85vw;
+  margin-inline: auto;
 }
