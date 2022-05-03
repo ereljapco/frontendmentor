@@ -63,8 +63,9 @@ Global Classes
 
 .img-bg {
   position: absolute;
-  width: 80.5%;
-  height: 12.7rem;
+  width: 80.5vw;
+  /* height: 12.7rem; */
+  height: 54.2vw;
   background-color: var(--clr-primary-500);
 }
 
@@ -167,7 +168,7 @@ Hero
 
 .hero__img-bg {
   position: absolute;
-  top: 3.55rem;
+  top: 3.75rem;
   right: 0;
   border-bottom-left-radius: 6.15rem;
   z-index: -1;
