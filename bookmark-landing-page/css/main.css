@@ -293,3 +293,9 @@ Features
 .features__sharing-title {
   font-size: 1.5rem;
 }
+
+.features__bookmarking-btn,
+.features__searching-btn,
+.features__sharing-btn {
+  display: none;
+}
