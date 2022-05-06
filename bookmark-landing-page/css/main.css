@@ -97,6 +97,7 @@ Global Classes
   padding: 0.88rem 1rem;
   transition: 0.275s ease-in-out all;
   box-shadow: 0px 5px 6px -3px rgba(145, 148, 161, 0.4);
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -218,6 +219,7 @@ Features
   border-right: 1px solid transparent;
   border-bottom: 1px solid var(--clr-grey-200);
   padding-block: 0.75rem;
+  cursor: pointer;
 }
 
 .features__bookmark-tab::after,
