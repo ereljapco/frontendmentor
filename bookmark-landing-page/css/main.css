@@ -331,6 +331,7 @@ Download
 }
 
 .download__chrome {
+  background: url(../images/bg-dots.svg) 0 80% / contain no-repeat;
   width: 75vw;
   padding-block: 3rem 1.5rem;
   border-radius: 0.75rem;
