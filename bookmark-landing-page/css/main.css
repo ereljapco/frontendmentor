@@ -390,6 +390,7 @@ FAQ
 }
 
 .faq__question-toggle-btn {
+  color: var(--clr-primary-500);
   font-size: 1.1rem;
   background-color: transparent;
   border-color: transparent;
