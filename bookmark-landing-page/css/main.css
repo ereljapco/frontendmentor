@@ -378,6 +378,10 @@ Download
 /* ===============
 FAQ
 =============== */
+.faq__text {
+  margin-bottom: 4rem;
+}
+
 .faq__question-heading {
   display: flex;
   justify-content: space-between;
@@ -391,7 +395,7 @@ FAQ
 
 .faq__question-toggle-btn {
   color: var(--clr-primary-500);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   background-color: transparent;
   border-color: transparent;
 }
