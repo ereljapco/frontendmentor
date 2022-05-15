@@ -401,3 +401,8 @@ FAQ
   background-color: transparent;
   border-color: transparent;
 }
+
+.faq__question-text {
+  height: 0;
+  overflow: hidden;
+}
