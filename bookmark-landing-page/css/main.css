@@ -383,3 +383,8 @@ FAQ
   justify-content: space-between;
   align-items: center;
 }
+
+.faq__question-title {
+  font-weight: 400;
+  font-size: 0.935rem;
+}
