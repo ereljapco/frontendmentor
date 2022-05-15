@@ -211,14 +211,15 @@ Features
 .features__search-tab,
 .features__share-tab {
   position: relative;
-  color: var(--clr-grey-800);
-  font-size: 1rem;
+  color: var(--clr-grey-600);
+  font-family: var(--ff-primary);
+  font-size: 1.05rem;
   background-color: transparent;
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-bottom: 1px solid var(--clr-grey-200);
-  padding-block: 0.75rem;
+  padding-block: 1.1rem;
   cursor: pointer;
 }
 
@@ -372,4 +373,13 @@ Download
 .download__firefox-btn,
 .download__opera-btn {
   width: 100%;
+}
+
+/* ===============
+FAQ
+=============== */
+.faq__question-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
