@@ -331,7 +331,7 @@ Download
 }
 
 .download__chrome {
-  background: url(../images/bg-dots.svg) 0 80% / contain no-repeat;
+  background: url(../images/bg-dots.svg) 0 75% / contain no-repeat;
   width: 75vw;
   padding-block: 3rem 1.5rem;
   padding-inline: 1.5rem;
@@ -352,7 +352,7 @@ Download
 }
 
 .download__chrome-text {
-  margin-bottom: 3rem;
+  margin-bottom: 3.75rem;
 }
 
 .download__chrome-btn {
