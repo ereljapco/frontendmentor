@@ -330,7 +330,9 @@ Download
   margin-bottom: 2.5rem;
 }
 
-.download__chrome {
+.download__chrome,
+.download__firefox,
+.download__opera {
   background: url(../images/bg-dots.svg) 0 75% / contain no-repeat;
   width: 75vw;
   padding-block: 3rem 1.5rem;
@@ -342,19 +344,27 @@ Download
   margin-inline: auto;
 }
 
-.download__chrome-img {
+.download__chrome-img,
+.download__firefox-img,
+.download__opera-img {
   margin-bottom: 1.6rem;
 }
 
-.download__chrome-title {
+.download__chrome-title,
+.download__firefox-title,
+.download__opera-title {
   font-size: 1.26rem;
   margin-bottom: 0.3rem;
 }
 
-.download__chrome-text {
+.download__chrome-text,
+.download__firefox-text,
+.download__opera-text {
   margin-bottom: 3.75rem;
 }
 
-.download__chrome-btn {
+.download__chrome-btn,
+.download__firefox-btn,
+.download__opera-btn {
   width: 100%;
 }
