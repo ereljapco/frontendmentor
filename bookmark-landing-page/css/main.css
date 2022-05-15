@@ -406,3 +406,8 @@ FAQ
   height: 0;
   overflow: hidden;
 }
+
+.faq__info-btn {
+  display: block;
+  margin-inline: auto;
+}
