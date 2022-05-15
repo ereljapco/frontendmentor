@@ -330,6 +330,11 @@ Download
   margin-bottom: 2.5rem;
 }
 
+.download__extensions {
+  display: grid;
+  row-gap: 2.75rem;
+}
+
 .download__chrome,
 .download__firefox,
 .download__opera {
