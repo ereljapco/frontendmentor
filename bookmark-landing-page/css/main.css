@@ -408,6 +408,7 @@ FAQ
   font-size: 1.4rem;
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .faq__question-text {
