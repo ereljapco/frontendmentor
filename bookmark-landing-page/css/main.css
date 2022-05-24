@@ -489,7 +489,8 @@ Contact
 
 .contact__form--display-error .contact__error-msg {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-style: italic;
   text-align: left;
+  padding: 0.25rem 0.5rem;
 }
