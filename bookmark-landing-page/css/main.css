@@ -453,3 +453,8 @@ Contact
 .contact__title {
   color: inherit;
 }
+
+/* form */
+.contact__error-msg {
+  display: none;
+}
