@@ -505,3 +505,8 @@ Footer
   background-color: var(--clr-neutral-500);
   padding-block: 2.5rem;
 }
+
+.footer__nav-list,
+.footer__social-links {
+  list-style-type: none;
+}
