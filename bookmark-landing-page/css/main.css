@@ -165,6 +165,12 @@ Nav
   z-index: 99;
 }
 
+.nav-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-menu__close-btn {
   color: var(--clr-white);
   font-size: 1.25rem;
