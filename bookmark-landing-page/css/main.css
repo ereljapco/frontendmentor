@@ -153,6 +153,16 @@ Nav
   cursor: pointer;
 }
 
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(229, 31%, 21%, 0.95);
+  z-index: 99;
+}
+
 /* ===============
 Hero
 =============== */
