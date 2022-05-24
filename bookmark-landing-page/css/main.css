@@ -520,6 +520,11 @@ Footer
   margin-bottom: 2rem;
 }
 
+.footer__nav-list {
+  display: grid;
+  row-gap: 1.75rem;
+}
+
 .footer__nav-link {
   text-transform: uppercase;
   text-decoration: none;
