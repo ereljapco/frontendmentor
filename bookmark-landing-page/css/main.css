@@ -489,4 +489,7 @@ Contact
 
 .contact__form--display-error .contact__error-msg {
   display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: left;
 }
