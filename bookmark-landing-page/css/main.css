@@ -444,6 +444,10 @@ Contact
   background-color: var(--clr-primary-500);
 }
 
+.contact__text {
+  text-transform: uppercase;
+}
+
 .contact__title {
   color: inherit;
 }
