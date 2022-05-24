@@ -516,6 +516,10 @@ Footer
   color: var(--clr-grey-50);
 }
 
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
 .footer__nav-link {
   text-transform: uppercase;
   text-decoration: none;
