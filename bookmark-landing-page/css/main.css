@@ -510,3 +510,8 @@ Footer
 .footer__social-links {
   list-style-type: none;
 }
+
+.footer__nav-link,
+.footer__social-link {
+  color: var(--clr-grey-50);
+}
