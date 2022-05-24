@@ -473,7 +473,10 @@ Contact
 
 .contact__contact-us-btn {
   width: 100%;
+  color: var(--clr-grey-50);
+  font-weight: bold;
   background-color: var(--clr-secondary-500);
   padding: 1rem;
+  border-radius: 0.25rem;
   border-color: transparent;
 }
