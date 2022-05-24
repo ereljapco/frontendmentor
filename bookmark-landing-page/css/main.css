@@ -524,6 +524,10 @@ Footer
 .footer__social-links {
   display: flex;
   justify-content: space-between;
-  width: 5rem;
+  width: 5.5rem;
   margin-inline: auto;
+}
+
+.footer__social-link {
+  font-size: 1.47rem;
 }
