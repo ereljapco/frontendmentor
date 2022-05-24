@@ -29,6 +29,10 @@ faqQuestions.forEach(function (question) {
   const toggleBtn = question.querySelector('.faq__question-toggle-btn');
 
   toggleBtn.addEventListener('click', function () {
+    faqQuestions.forEach(function (question) {
+      question.classList.remove('faq__question--show-text');
+    });
+
     if (question.classList.contains('faq__question--show-text')) {
       question.classList.remove('faq__question--show-text');
     } else {
