@@ -3,6 +3,9 @@ const featuresTabs = document.querySelectorAll('.features__tabs > button');
 const featuresContents = document.querySelectorAll(
   '.features__contents > article'
 );
+const faqQuestionToggleBtn = document.querySelectorAll(
+  '.faq__question-toggle-btn'
+);
 
 // add click event listener to each button of featuresTabs
 featuresTabs.forEach(function (featureBtn) {
@@ -21,5 +24,18 @@ featuresTabs.forEach(function (featureBtn) {
         content.classList.remove('features__content--selected');
       }
     });
+  });
+});
+
+console.log(faqQuestionToggleBtn);
+faqQuestionToggleBtn.forEach(function (toggleBtn) {
+  toggleBtn.addEventListener('click', function (e) {
+    const question = e.target.parentElement.parentElement.parentElement;
+
+    if (question.classList.contains('faq__question--show-text')) {
+      question.classList.remove('faq__question--show-text');
+    } else {
+      question.classList.add('faq__question--show-text');
+    }
   });
 });
