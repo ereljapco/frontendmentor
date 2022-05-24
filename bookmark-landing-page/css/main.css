@@ -481,6 +481,12 @@ Contact
   border-color: transparent;
 }
 
+.contact__form--display-error .contact__email {
+  background-color: var(--clr-secondary-500);
+  padding: 0.15rem;
+  border-radius: 0.25rem;
+}
+
 .contact__form--display-error .contact__error-msg {
   display: block;
 }
