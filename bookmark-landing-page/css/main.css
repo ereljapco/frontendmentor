@@ -470,3 +470,8 @@ Contact
 .contact__error-msg {
   display: none;
 }
+
+.contact__contact-us-btn {
+  background-color: var(--clr-secondary-500);
+  border-color: transparent;
+}
