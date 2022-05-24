@@ -430,3 +430,10 @@ FAQ
   display: block;
   margin-inline: auto;
 }
+
+/* ===============
+Contact
+=============== */
+.contact {
+  background-color: var(--clr-primary-500);
+}
