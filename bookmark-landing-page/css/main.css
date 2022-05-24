@@ -480,3 +480,7 @@ Contact
   border-radius: 0.25rem;
   border-color: transparent;
 }
+
+.contact__form--display-error .contact__error-msg {
+  display: block;
+}
