@@ -192,6 +192,11 @@ Nav
   list-style-type: none;
 }
 
+.nav-menu__link,
+.nav-menu__social-link {
+  color: var(--clr-white);
+}
+
 /* ===============
 Hero
 =============== */
