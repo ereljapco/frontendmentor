@@ -3,9 +3,7 @@ const featuresTabs = document.querySelectorAll('.features__tabs > button');
 const featuresContents = document.querySelectorAll(
   '.features__contents > article'
 );
-const faqQuestionToggleBtn = document.querySelectorAll(
-  '.faq__question-toggle-btn'
-);
+const faqQuestions = document.querySelectorAll('.faq__question');
 
 // add click event listener to each button of featuresTabs
 featuresTabs.forEach(function (featureBtn) {
@@ -27,11 +25,10 @@ featuresTabs.forEach(function (featureBtn) {
   });
 });
 
-console.log(faqQuestionToggleBtn);
-faqQuestionToggleBtn.forEach(function (toggleBtn) {
-  toggleBtn.addEventListener('click', function (e) {
-    const question = e.target.parentElement.parentElement.parentElement;
+faqQuestions.forEach(function (question) {
+  const toggleBtn = question.querySelector('.faq__question-toggle-btn');
 
+  toggleBtn.addEventListener('click', function () {
     if (question.classList.contains('faq__question--show-text')) {
       question.classList.remove('faq__question--show-text');
     } else {
