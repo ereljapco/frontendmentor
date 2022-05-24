@@ -445,7 +445,9 @@ Contact
 }
 
 .contact__text {
+  display: block;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .contact__title {
