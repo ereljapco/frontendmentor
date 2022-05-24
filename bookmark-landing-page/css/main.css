@@ -515,3 +515,8 @@ Footer
 .footer__social-link {
   color: var(--clr-grey-50);
 }
+
+.footer__nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
