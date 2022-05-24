@@ -187,6 +187,11 @@ Nav
   border-color: transparent;
 }
 
+.nav-menu__list,
+.nav-menu__social-links {
+  list-style-type: none;
+}
+
 /* ===============
 Hero
 =============== */
