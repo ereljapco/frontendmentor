@@ -479,6 +479,7 @@ Contact
   padding: 1rem;
   border-radius: 0.25rem;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .contact__form--display-error .contact__email {
