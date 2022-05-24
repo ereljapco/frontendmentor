@@ -435,5 +435,9 @@ FAQ
 Contact
 =============== */
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22.5rem;
   background-color: var(--clr-primary-500);
 }
