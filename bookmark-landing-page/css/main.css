@@ -452,9 +452,14 @@ Contact
 
 .contact__title {
   color: inherit;
+  margin-bottom: 2rem;
 }
 
 /* form */
+.contact__email {
+  margin-bottom: 1rem;
+}
+
 .contact__email-input {
   width: 100%;
   padding: 1rem;
