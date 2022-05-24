@@ -439,5 +439,7 @@ Contact
   justify-content: center;
   align-items: center;
   height: 22.5rem;
+  color: var(--clr-grey-50);
+  text-align: center;
   background-color: var(--clr-primary-500);
 }
