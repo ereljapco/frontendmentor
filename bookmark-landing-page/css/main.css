@@ -455,6 +455,12 @@ Contact
 }
 
 /* form */
+.contact__email-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 .contact__error-msg {
   display: none;
 }
