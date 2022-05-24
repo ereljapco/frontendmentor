@@ -6,21 +6,7 @@ const faqQuestions = document.querySelectorAll('.faq__question');
 
 featuresTabs.forEach(displayTabContent);
 
-faqQuestions.forEach(function (question) {
-  const toggleBtn = question.querySelector('.faq__question-toggle-btn');
-
-  toggleBtn.addEventListener('click', function () {
-    faqQuestions.forEach(function (question) {
-      question.classList.remove('faq__question--show-text');
-    });
-
-    if (question.classList.contains('faq__question--show-text')) {
-      question.classList.remove('faq__question--show-text');
-    } else {
-      question.classList.add('faq__question--show-text');
-    }
-  });
-});
+faqQuestions.forEach(displayQuestionText);
 
 function displayTabContent(tabBtn) {
   tabBtn.addEventListener('click', function (e) {
@@ -34,5 +20,21 @@ function displayTabContent(tabBtn) {
         content.classList.remove('features__content--selected');
       }
     });
+  });
+}
+
+function displayQuestionText(question) {
+  const toggleBtn = question.querySelector('.faq__question-toggle-btn');
+
+  toggleBtn.addEventListener('click', function () {
+    faqQuestions.forEach(function (question) {
+      question.classList.remove('faq__question--show-text');
+    });
+
+    if (question.classList.contains('faq__question--show-text')) {
+      question.classList.remove('faq__question--show-text');
+    } else {
+      question.classList.add('faq__question--show-text');
+    }
   });
 }
