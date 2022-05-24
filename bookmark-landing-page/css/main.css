@@ -386,12 +386,16 @@ FAQ
   margin-bottom: 3rem;
 }
 
+.faq__question {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--clr-grey-200);
+  margin-bottom: 1.25rem;
+}
+
 .faq__question-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--clr-grey-200);
 }
 
 .faq__question-title {
