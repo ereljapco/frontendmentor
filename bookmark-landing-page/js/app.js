@@ -4,20 +4,7 @@ const featuresContents = document.querySelectorAll(
 );
 const faqQuestions = document.querySelectorAll('.faq__question');
 
-featuresTabs.forEach(function (featureBtn) {
-  featureBtn.addEventListener('click', function (e) {
-    const id = e.target.dataset.content;
-    const featuresContent = document.querySelector(`#${id}`);
-
-    featuresContents.forEach(function (content) {
-      if (featuresContent === content) {
-        content.classList.add('features__content--selected');
-      } else {
-        content.classList.remove('features__content--selected');
-      }
-    });
-  });
-});
+featuresTabs.forEach(displayTabContent);
 
 faqQuestions.forEach(function (question) {
   const toggleBtn = question.querySelector('.faq__question-toggle-btn');
@@ -34,3 +21,18 @@ faqQuestions.forEach(function (question) {
     }
   });
 });
+
+function displayTabContent(tabBtn) {
+  tabBtn.addEventListener('click', function (e) {
+    const id = e.target.dataset.content;
+    const featuresContent = document.querySelector(`#${id}`);
+
+    featuresContents.forEach(function (content) {
+      if (featuresContent === content) {
+        content.classList.add('features__content--selected');
+      } else {
+        content.classList.remove('features__content--selected');
+      }
+    });
+  });
+}
