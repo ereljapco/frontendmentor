@@ -458,7 +458,8 @@ Contact
 .contact__email-input {
   width: 100%;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
 }
 
 .contact__error-msg {
