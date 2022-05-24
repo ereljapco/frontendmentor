@@ -514,6 +514,12 @@ Footer
 .footer__nav-link,
 .footer__social-link {
   color: var(--clr-grey-50);
+  transition: all 0.25s ease-in-out;
+}
+
+.footer__nav-link:hover,
+.footer__social-link:hover {
+  color: var(--clr-secondary-500);
 }
 
 .footer__logo {
