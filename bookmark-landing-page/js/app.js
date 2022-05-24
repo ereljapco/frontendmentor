@@ -24,17 +24,15 @@ function displayTabContent(tabBtn) {
 }
 
 function displayQuestionText(question) {
-  const toggleBtn = question.querySelector('.faq__question-toggle-btn');
+  const questionHeading = question.querySelector('.faq__question-heading');
 
-  toggleBtn.addEventListener('click', function () {
-    faqQuestions.forEach(function (question) {
-      question.classList.remove('faq__question--show-text');
+  questionHeading.addEventListener('click', function () {
+    faqQuestions.forEach(function (faqQuestion) {
+      if (faqQuestion !== question) {
+        faqQuestion.classList.remove('faq__question--show-text');
+      }
     });
 
-    if (question.classList.contains('faq__question--show-text')) {
-      question.classList.remove('faq__question--show-text');
-    } else {
-      question.classList.add('faq__question--show-text');
-    }
+    question.classList.toggle('faq__question--show-text');
   });
 }
