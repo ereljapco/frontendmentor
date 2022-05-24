@@ -382,6 +382,10 @@ FAQ
   margin-bottom: 4rem;
 }
 
+.faq__questions {
+  margin-bottom: 3rem;
+}
+
 .faq__question-heading {
   display: flex;
   justify-content: space-between;
