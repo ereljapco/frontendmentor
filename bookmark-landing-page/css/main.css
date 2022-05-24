@@ -496,3 +496,11 @@ Contact
   text-align: left;
   padding: 0.25rem 0.5rem;
 }
+
+/* ===============
+Footer
+=============== */
+.footer {
+  background-color: var(--clr-neutral-500);
+  text-align: center;
+}
