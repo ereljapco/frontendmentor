@@ -481,6 +481,13 @@ Contact
   border-radius: 0.25rem;
   border-color: transparent;
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.contact__contact-us-btn:hover {
+  color: var(--clr-secondary-500);
+  background-color: var(--clr-grey-50);
+  border-color: var(--clr-secondary-500);
 }
 
 .contact__form--display-error .contact__email {
