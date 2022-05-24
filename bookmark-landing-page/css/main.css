@@ -165,6 +165,12 @@ Nav
   z-index: 99;
 }
 
+.nav-menu--container {
+  width: 83vw;
+  padding-block: 2.4rem;
+  margin-inline: auto;
+}
+
 .nav-menu__header {
   display: flex;
   justify-content: space-between;
