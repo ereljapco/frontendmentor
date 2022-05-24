@@ -416,6 +416,11 @@ FAQ
   overflow: hidden;
 }
 
+.faq__question--show-text .faq__question-toggle-btn {
+  color: var(--clr-secondary-500);
+  transform: rotate(180deg);
+}
+
 .faq__question--show-text .faq__question-text {
   height: auto;
   margin-block: 1.5rem 1rem;
