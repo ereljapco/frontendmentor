@@ -197,6 +197,11 @@ Nav
   color: var(--clr-white);
 }
 
+.nav-menu__item {
+  text-align: center;
+  border-top: 0.1rem solid hsla(229, 8%, 60%, 0.3);
+}
+
 .nav-menu__link {
   text-transform: uppercase;
   text-decoration: none;
