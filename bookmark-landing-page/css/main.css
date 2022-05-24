@@ -520,3 +520,8 @@ Footer
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.footer__social-links {
+  display: flex;
+  justify-content: space-between;
+}
