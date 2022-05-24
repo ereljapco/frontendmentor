@@ -443,3 +443,7 @@ Contact
   text-align: center;
   background-color: var(--clr-primary-500);
 }
+
+.contact__title {
+  color: inherit;
+}
