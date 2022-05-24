@@ -27,6 +27,7 @@ Global Variables
   --clr-grey-800: hsl(230, 5%, 24%);
   --clr-grey-900: hsl(220, 5%, 12%);
   --clr-neutral-500: hsl(229, 31%, 21%);
+  --clr-white: #fff;
   /* font */
   --ff-primary: 'Rubik', sans-serif;
 }
@@ -153,6 +154,7 @@ Nav
   cursor: pointer;
 }
 
+/* nav-menu */
 .nav-menu {
   position: absolute;
   top: 0;
@@ -161,6 +163,12 @@ Nav
   height: 100%;
   background-color: hsla(229, 31%, 21%, 0.95);
   z-index: 99;
+}
+
+.nav-menu__close-btn {
+  color: var(--clr-white);
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /* ===============
