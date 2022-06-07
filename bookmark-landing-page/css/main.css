@@ -209,6 +209,11 @@ Nav
 .nav-menu__link {
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-menu__link:hover {
+  color: var(--clr-secondary-500);
 }
 
 /* ===============
