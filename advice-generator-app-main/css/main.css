@@ -1,0 +1,22 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============
+Global Variables
+============= */
+
+:root {
+  --ft-primary: 'Manrope', sans-serif;
+  /* primary colors */
+  --clr-primary-200: hsl(193, 38%, 86%);
+  --clr-primary-500: hsl(150, 100%, 66%);
+  /* neutrals */
+  --clr-neutral-200: hsl(217, 19%, 38%);
+  --clr-neutral-300: hsl(217, 19%, 24%);
+  --clr-neutral-700: hsl(218, 23%, 16%);
+}
