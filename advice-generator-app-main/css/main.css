@@ -35,6 +35,7 @@ Global Variables
 }
 
 .advice {
+  position: relative;
   width: 91.5vw;
   background-color: var(--clr-neutral-300);
   border-radius: 0.5rem;
@@ -55,6 +56,9 @@ Global Variables
 }
 
 .advice__random-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
   width: 4rem;
   height: 4rem;
   line-height: 4.5rem;
@@ -62,5 +66,6 @@ Global Variables
   background-color: var(--clr-primary-500);
   border-color: transparent;
   border-radius: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
 }
