@@ -51,6 +51,13 @@ Global Variables
   text-align: center;
 }
 
+.advice__text {
+  color: var(--clr-primary-200);
+  font-size: 1.45rem;
+  font-weight: 800;
+  text-align: center;
+}
+
 .advice__divider--desktop {
   display: none;
 }
