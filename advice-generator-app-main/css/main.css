@@ -38,6 +38,7 @@ Global Variables
   position: relative;
   width: 91.5vw;
   background-color: var(--clr-neutral-300);
+  padding: 2rem 1.5rem 4rem 1.5rem;
   border-radius: 0.5rem;
   margin-block: 7.5rem;
 }
