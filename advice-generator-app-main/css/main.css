@@ -35,7 +35,8 @@ Global Variables
 }
 
 .advice {
-  width: 92vw;
+  width: 91.5vw;
   background-color: var(--clr-neutral-300);
   border-radius: 0.5rem;
+  margin-block: 7.5rem;
 }
