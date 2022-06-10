@@ -20,3 +20,8 @@ Global Variables
   --clr-neutral-300: hsl(217, 19%, 24%);
   --clr-neutral-700: hsl(218, 23%, 16%);
 }
+
+body {
+  font-family: var(--ft-primary);
+  background-color: var(--clr-neutral-700);
+}
