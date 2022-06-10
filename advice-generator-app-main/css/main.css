@@ -62,7 +62,7 @@ Global Variables
   width: 4rem;
   height: 4rem;
   line-height: 4.5rem;
-  color: hsl(218, 23%, 16%);
+  color: var(--clr-neutral-700);
   background-color: var(--clr-primary-500);
   border-color: transparent;
   border-radius: 50%;
