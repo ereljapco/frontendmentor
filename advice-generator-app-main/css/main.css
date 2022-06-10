@@ -33,3 +33,9 @@ Global Variables
   display: flex;
   justify-content: center;
 }
+
+.advice {
+  width: 92vw;
+  background-color: var(--clr-neutral-300);
+  border-radius: 0.5rem;
+}
