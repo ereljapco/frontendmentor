@@ -53,3 +53,14 @@ Global Variables
 .advice__divider--desktop {
   display: none;
 }
+
+.advice__random-btn {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4.5rem;
+  color: hsl(218, 23%, 16%);
+  background-color: var(--clr-primary-500);
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
