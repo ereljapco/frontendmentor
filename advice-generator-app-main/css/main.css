@@ -25,3 +25,11 @@ body {
   font-family: var(--ft-primary);
   background-color: var(--clr-neutral-700);
 }
+
+/* =============
+Global Variables
+============= */
+.main {
+  display: flex;
+  justify-content: center;
+}
