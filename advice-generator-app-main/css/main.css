@@ -49,3 +49,7 @@ Global Variables
   text-transform: uppercase;
   text-align: center;
 }
+
+.advice__divider--desktop {
+  display: none;
+}
