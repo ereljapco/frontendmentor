@@ -38,7 +38,7 @@ Global Variables
   position: relative;
   width: 91.5vw;
   background-color: var(--clr-neutral-300);
-  padding: 2.1rem 1.75rem 4rem 1.75rem;
+  padding: 2.1rem 1.5rem 4rem 1.5rem;
   border-radius: 0.5rem;
   margin-block: 7.5rem;
 }
@@ -50,13 +50,16 @@ Global Variables
   letter-spacing: 0.215rem;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .advice__text {
   color: var(--clr-primary-200);
-  font-size: 1.45rem;
+  font-size: 1.475rem;
   font-weight: 800;
   text-align: center;
+  line-height: 2.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .advice__divider--desktop {
