@@ -79,4 +79,9 @@ Global Variables
   border-radius: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.advice__random-btn:hover {
+  box-shadow: 0 0 30px 1px var(--clr-primary-500);
 }
