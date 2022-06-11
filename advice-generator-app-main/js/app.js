@@ -10,8 +10,8 @@ adviceRandomBtn.addEventListener('click', () => {
 });
 
 async function fetchAdvice() {
-  adviceContainer.textContent = '...';
   try {
+    adviceContainer.textContent = '...';
     const response = await fetch(adviceURL);
 
     if (!response.ok) {
@@ -24,6 +24,6 @@ async function fetchAdvice() {
     adviceTitle.textContent = `Advice #${id}`;
     adviceContainer.innerHTML = `&ldquo;${advice}&rdquo;`;
   } catch (error) {
-    console.log(error);
+    adviceContainer.textContent = `Ooops. There was an error.`;
   }
 }
