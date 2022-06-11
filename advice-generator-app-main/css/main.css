@@ -70,8 +70,23 @@ Global Variables
   margin-bottom: 1.5rem;
 }
 
+.advice__divider {
+  display: flex;
+  justify-content: center;
+}
+
 .advice__divider--desktop {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .advice__divider--desktop {
+    display: block;
+  }
+
+  .advice__divider--mobile {
+    display: none;
+  }
 }
 
 .advice__random-btn {
