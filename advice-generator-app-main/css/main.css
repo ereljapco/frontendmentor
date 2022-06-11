@@ -34,9 +34,17 @@ Global Variables
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    height: 100vh;
+    align-items: center;
+  }
+}
+
 .advice {
   position: relative;
   width: 91.5vw;
+  max-width: 540px;
   background-color: var(--clr-neutral-300);
   padding: 2.1rem 1.5rem 3.8rem 1.5rem;
   border-radius: 0.65rem;
