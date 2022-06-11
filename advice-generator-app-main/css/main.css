@@ -34,13 +34,6 @@ Global Variables
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .main {
-    height: 100vh;
-    align-items: center;
-  }
-}
-
 .advice {
   position: relative;
   width: 91.5vw;
@@ -83,17 +76,19 @@ Global Variables
   .advice {
     padding-block: 2.5rem 4.5rem;
     padding-inline: 2.5rem;
-    margin-block: 0;
+    margin-top: 13.95rem;
   }
 
   .advice__title {
-    font-size: 0.875rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.7rem;
   }
 
   .advice__text {
     font-size: 1.71rem;
     line-height: 1.4;
-    margin-bottom: 2.75rem;
+    margin-bottom: 2.4rem;
   }
 
   .advice__divider--desktop {
