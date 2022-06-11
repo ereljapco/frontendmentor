@@ -76,6 +76,7 @@ Global Variables
   .advice {
     padding-block: 2.5rem 4.5rem;
     padding-inline: 2.5rem;
+    border-radius: 1rem;
     margin-top: 13.95rem;
   }
 
