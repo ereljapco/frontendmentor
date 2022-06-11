@@ -80,6 +80,19 @@ Global Variables
 }
 
 @media screen and (min-width: 768px) {
+  .advice {
+    padding-block: 2.5rem 4.5rem;
+    padding-inline: 2rem;
+  }
+
+  .advice__title {
+    font-size: 0.875rem;
+  }
+
+  .advice__text {
+    font-size: 1.75rem;
+  }
+
   .advice__divider--desktop {
     display: block;
   }
