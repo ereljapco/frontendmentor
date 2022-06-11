@@ -83,6 +83,7 @@ Global Variables
   .advice {
     padding-block: 2.5rem 4.5rem;
     padding-inline: 2rem;
+    margin-block: 0;
   }
 
   .advice__title {
@@ -91,6 +92,7 @@ Global Variables
 
   .advice__text {
     font-size: 1.75rem;
+    margin-bottom: 2.75rem;
   }
 
   .advice__divider--desktop {
