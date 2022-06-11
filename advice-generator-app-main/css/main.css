@@ -82,7 +82,7 @@ Global Variables
 @media screen and (min-width: 768px) {
   .advice {
     padding-block: 2.5rem 4.5rem;
-    padding-inline: 2rem;
+    padding-inline: 2.5rem;
     margin-block: 0;
   }
 
@@ -91,7 +91,8 @@ Global Variables
   }
 
   .advice__text {
-    font-size: 1.75rem;
+    font-size: 1.71rem;
+    line-height: 1.4;
     margin-bottom: 2.75rem;
   }
 
