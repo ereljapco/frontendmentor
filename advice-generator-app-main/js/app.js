@@ -1,3 +1,5 @@
+import displayAttribution from './modules/attribution.js';
+
 const adviceTitle = document.querySelector('.advice__title');
 const adviceContainer = document.querySelector('.advice__text');
 const adviceURL = 'https://api.adviceslip.com/advice';
@@ -8,6 +10,8 @@ fetchAdvice();
 adviceRandomBtn.addEventListener('click', () => {
   fetchAdvice();
 });
+
+displayAttribution();
 
 async function fetchAdvice() {
   try {
