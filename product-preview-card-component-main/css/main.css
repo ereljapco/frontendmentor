@@ -90,7 +90,6 @@ Product Preview
 .product__title {
   font-size: 1.87rem;
   font-weight: 600;
-  font-stretch: extra-condensed;
   line-height: 1;
   transform: scaleY(1.08);
   margin-block: 1rem 1rem;
