@@ -4,9 +4,10 @@
 Attribution
 ============= */
 .attribution {
-  position: fixed;
+  position: absolute;
   right: 1.5rem;
   bottom: 1.5rem;
+  z-index: 999;
 }
 
 .attribution__toggle-btn {
@@ -15,17 +16,16 @@ Attribution
   color: var(--clr-neutral-100);
   font-size: 1.75rem;
   font-family: 'Arizonia', cursive;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-neutral-500);
   border-color: transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.65rem;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
-  z-index: 999;
 }
 
 .attribution__toggle-btn:hover {
-  /* box-shadow: 0 0 30px 1px var(--clr-primary); */
-  background-color: var(--clr-neutral-500);
+  /* box-shadow: 0 0 30px 1px var(--clr-neutral-700); */
+  background-color: var(--clr-neutral-700);
 }
 
 .attribution__info {
@@ -36,7 +36,7 @@ Attribution
   height: 0;
   right: 0;
   bottom: 6.2rem;
-  color: var(--clr-neutral-500);
+  /* color: var(--clr-neutral-500); */
   font-size: 0.75rem;
   border-radius: 6rem;
   opacity: 0;
@@ -53,23 +53,22 @@ Attribution
 .attribution__link {
   width: 100%;
   height: 3rem;
-  color: var(--clr-neutral-500);
   padding: 0.65rem;
-  border: 1px solid var(--clr-primary);
-  border-radius: 0.5rem;
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 0.65rem;
   margin-bottom: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
 .attribution__link:hover {
-  border-color: var(--clr-neutral-500);
+  border-color: var(--clr-neutral-700);
 }
 
 .attribution__icon path {
-  fill: var(--clr-primary);
+  fill: var(--clr-neutral-500);
   transition: all 0.3s ease-in-out;
 }
 
 .attribution__link:hover .attribution__icon path {
-  fill: var(--clr-neutral-500);
+  fill: var(--clr-neutral-700);
 }
