@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+/* =============
+Attribution
+============= */
+.attribution {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.attribution__toggle-btn {
+  width: 3rem;
+  height: 3rem;
+  color: var(--clr-neutral-100);
+  font-size: 1.75rem;
+  font-family: 'Arizonia', cursive;
+  background-color: var(--clr-primary);
+  border-color: transparent;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.attribution__toggle-btn:hover {
+  /* box-shadow: 0 0 30px 1px var(--clr-primary); */
+  background-color: var(--clr-neutral-500);
+}
+
+.attribution__info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 3rem;
+  height: 0;
+  right: 0;
+  bottom: 6.2rem;
+  color: var(--clr-neutral-500);
+  font-size: 0.75rem;
+  border-radius: 6rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.attribution--show-info .attribution__info {
+  height: 7rem;
+  opacity: 1;
+  bottom: 4rem;
+}
+
+.attribution__link {
+  width: 100%;
+  height: 3rem;
+  color: var(--clr-neutral-500);
+  padding: 0.65rem;
+  border: 1px solid var(--clr-primary);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.attribution__link:hover {
+  border-color: var(--clr-neutral-500);
+}
+
+.attribution__icon path {
+  fill: var(--clr-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.attribution__link:hover .attribution__icon path {
+  fill: var(--clr-neutral-500);
+}

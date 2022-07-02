@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============
+Global Variables
+============= */
+
+:root {
+  --ft-primary: 'Manrope', sans-serif;
+  /* primary colors */
+  --clr-cyan-500: hsl(158, 36%, 37%);
+  --clr-cream-500: hsl(30, 38%, 92%);
+  /* neutrals */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(228, 12%, 48%);
+  --clr-neutral-500: hsl(212, 21%, 14%);
+  /* color assignment */
+  --clr-main-bg: var(--clr-cream-500);
+  --clr-secondary-bg: var(--clr-neutral-100);
+  --clr-header: var(--clr-neutral-500);
+  --clr-text: var(--clr-neutral-200);
+  --clr-primary: var(--clr-cyan-500);
+}
+
+body {
+  font-family: var(--ft-primary);
+  background-color: var(--clr-main-bg);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+/* =============
+Product Preview
+============= */
