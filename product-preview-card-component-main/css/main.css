@@ -135,12 +135,16 @@ Product Preview
   border-color: transparent;
   border-radius: 0.5rem;
   margin-inline: auto;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
 
 .product__add-btn:hover {
   background-color: var(--clr-neutral-500);
+}
+
+.product__add-btn:focus {
+  outline: 0.15rem dotted var(--clr-neutral-500);
 }
 
 @media screen and (min-width: 481px) {
