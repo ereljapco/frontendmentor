@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+css custom properties
+============= */
+
+:root {
+  /* colors */
+  --clr-red-500: hsl(10, 79%, 65%);
+  --clr-cyan-500: hsl(186, 34%, 60%);
+  --clr-brown-200: hsl(28, 10%, 53%);
+  --clr-brown-500: hsl(25, 47%, 15%);
+  --clr-cream-500: hsl(27, 66%, 92%);
+  --clr-orange-100: hsl(33, 100%, 98%);
+  --ft-primary: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--ft-primary);
+  font-size: 1.125rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
