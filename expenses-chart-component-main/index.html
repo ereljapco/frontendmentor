@@ -23,6 +23,45 @@
     <link rel="stylesheet" href="./css/attribution.css" />
   </head>
   <body>
+    <main class="main">
+      <section class="expenses-chart">
+        <h1 class="expenses-chart__title">Expenses Chart</h1>
+        <div class="expenses-chart-container">
+          <section class="balance">
+            <div class="balance__info">
+              <h2 class="balance__title">My balance</h2>
+              <p class="balance__amount">$921.48</p>
+            </div>
+            <a class="balance__logo-link" href="./">
+              <img
+                class="balance__logo-img"
+                src="./images/logo.svg"
+                alt="Home"
+              />
+            </a>
+          </section>
+          <section class="expenses">
+            <h2 class="expenses__title">Spending - Last 7 days</h2>
+            <canvas
+              class="expenses__chart"
+              aria-label="Chart of expenses in the last 7 days"
+              role="img"
+            ></canvas>
+            <section class="summary">
+              <h2 class="summary__title">Expense Summary</h2>
+              <div class="summary__monthly">
+                Total this month
+                <span class="summary__monthly-amount">$478.33</span>
+              </div>
+              <div class="summary__rate">
+                <span class="summary__rate-value">+2.4%</span>
+                from last month
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="attribution">
         <button class="attribution__toggle-btn">erj</button>
