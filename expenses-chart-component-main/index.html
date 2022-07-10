@@ -9,6 +9,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <base href="/" />
     <title>Expenses Chart Component | Coded by Erel Japco</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,6 +47,7 @@
               class="expenses__chart"
               aria-label="Chart of expenses in the last 7 days"
               role="img"
+              height="190"
             ></canvas>
             <section class="summary">
               <h2 class="summary__title">Expense Summary</h2>
@@ -101,6 +103,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/node_modules/chart.js/dist/chart.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
