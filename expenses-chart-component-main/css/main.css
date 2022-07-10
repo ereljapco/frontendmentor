@@ -102,6 +102,22 @@ expenses chart
   font-size: 1.35em;
 }
 
+.expenses__chart {
+  margin-bottom: 1.25em;
+}
+
+.expenses__divider {
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background-image: linear-gradient(
+    var(--clr-cream-500),
+    var(--clr-orange-100)
+  );
+  border-radius: 100vh;
+  margin-bottom: 1.25em;
+}
+
 .summary {
   display: flex;
   justify-content: space-between;
