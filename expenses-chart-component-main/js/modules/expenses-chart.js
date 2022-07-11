@@ -23,6 +23,28 @@ function displayExpensesChart() {
     return 'hsla(10, 79%, 65%, 0.7)';
   });
 
+  window.addEventListener('load', () => {
+    setFontSize();
+  });
+
+  window.addEventListener('resize', () => {
+    setFontSize();
+  });
+
+  function setFontSize() {
+    const viewWidth = window.outerWidth;
+    let fontSize = 0;
+
+    if (viewWidth >= 1024) {
+      fontSize = 16;
+    } else if (viewWidth >= 768 && viewWidth > 375) {
+      fontSize = 14;
+    } else {
+      fontSize = 12;
+    }
+
+    Chart.defaults.font.size = fontSize;
+  }
   Chart.defaults.font.family = "'DM Sans', sans-serif";
   Chart.defaults.color = 'hsl(28, 10%, 53%)';
 
@@ -33,14 +55,11 @@ function displayExpensesChart() {
     const tooltip = this;
 
     if (!elements[0]) {
-      return {
-        x: 0,
-        y: 0,
-      };
+      return false;
     }
     const model = elements[0].element;
     const x = model.x;
-    const y = model.y - 35;
+    const y = model.y - 43;
 
     return {
       x: x,
@@ -63,7 +82,7 @@ function displayExpensesChart() {
       ],
     },
     options: {
-      barThickness: 32,
+      maintainAspectRatio: false,
       scales: {
         x: {
           type: 'category',
@@ -87,6 +106,12 @@ function displayExpensesChart() {
           position: 'customPositioner',
           xAlign: 'center',
           yAlign: 'top',
+          padding: {
+            top: 10,
+            bottom: 10,
+            left: 7,
+            right: 7,
+          },
           titleFont: "'DM Sans', sans-serif",
           backgroundColor: 'hsl(25, 47%, 15%)',
           caretSize: 0,
