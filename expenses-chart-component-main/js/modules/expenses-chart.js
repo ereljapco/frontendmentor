@@ -37,7 +37,7 @@ function displayExpensesChart() {
 
     if (viewWidth >= 1024) {
       fontSize = 16;
-    } else if (viewWidth >= 768 && viewWidth > 375) {
+    } else if (viewWidth < 1024 && viewWidth >= 768 && viewWidth > 375) {
       fontSize = 14;
     } else {
       fontSize = 12;
@@ -45,6 +45,7 @@ function displayExpensesChart() {
 
     Chart.defaults.font.size = fontSize;
   }
+
   Chart.defaults.font.family = "'DM Sans', sans-serif";
   Chart.defaults.color = 'hsl(28, 10%, 53%)';
 
@@ -59,7 +60,7 @@ function displayExpensesChart() {
     }
     const model = elements[0].element;
     const x = model.x;
-    const y = model.y - 43;
+    const y = model.y - 46;
 
     return {
       x: x,
