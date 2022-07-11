@@ -4,6 +4,7 @@ function displayExpensesChart() {
   const chartContainer = document.querySelector('.expenses__chart');
   const days = expensesData.map((data) => data.day);
   const expenses = expensesData.map((data) => data.amount);
+  const maxExpense = Math.ceil(Math.max(...expenses)) + 15;
   const today = new Date().getDay();
 
   const setBarBackgroundColor = expenses.map((data, index) => {
@@ -25,6 +26,28 @@ function displayExpensesChart() {
   Chart.defaults.font.family = "'DM Sans', sans-serif";
   Chart.defaults.color = 'hsl(28, 10%, 53%)';
 
+  Chart.Tooltip.positioners.customPositioner = function (
+    elements,
+    eventPosition
+  ) {
+    const tooltip = this;
+
+    if (!elements[0]) {
+      return {
+        x: 0,
+        y: 0,
+      };
+    }
+    const model = elements[0].element;
+    const x = model.x;
+    const y = model.y - 35;
+
+    return {
+      x: x,
+      y: y,
+    };
+  };
+
   const chart = new Chart(chartContainer, {
     type: 'bar',
     data: {
@@ -40,6 +63,7 @@ function displayExpensesChart() {
       ],
     },
     options: {
+      barThickness: 32,
       scales: {
         x: {
           type: 'category',
@@ -52,11 +76,46 @@ function displayExpensesChart() {
         y: {
           labels: expenses,
           display: false,
+          max: maxExpense,
         },
       },
       plugins: {
         legend: {
           display: false,
+        },
+        tooltip: {
+          position: 'customPositioner',
+          xAlign: 'center',
+          yAlign: 'top',
+          titleFont: "'DM Sans', sans-serif",
+          backgroundColor: 'hsl(25, 47%, 15%)',
+          caretSize: 0,
+          displayColors: false,
+          callbacks: {
+            title: function (context) {
+              let label = context[0].label;
+
+              label = '';
+
+              return label;
+            },
+            label: function (context) {
+              let label = context.dataset.label || '';
+
+              if (label) {
+                label = '';
+              }
+
+              if (context.parsed.y !== null) {
+                label += new Intl.NumberFormat('en-US', {
+                  style: 'currency',
+                  currency: 'USD',
+                }).format(context.parsed.y);
+              }
+
+              return label;
+            },
+          },
         },
       },
     },
