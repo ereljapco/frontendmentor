@@ -58,8 +58,10 @@ expenses chart
 .expenses-chart-container {
   display: flex;
   flex-direction: column;
+  place-content: center;
   gap: 0.9em;
   width: 91.5vw;
+  max-width: 540px;
 }
 
 .balance {
@@ -103,6 +105,10 @@ expenses chart
   font-size: 1.34em;
   padding-inline: 0.2em;
   margin-bottom: 0.4em;
+}
+
+.expenses__chart-container {
+  height: 15.3rem;
 }
 
 .expenses__chart {
@@ -157,4 +163,66 @@ expenses chart
 .summary__rate {
   align-items: flex-end;
   gap: 0.1em;
+}
+
+@media screen and (min-width: 768px) {
+  .balance {
+    border-radius: 1em;
+    padding: 1.5em 1.7em;
+  }
+
+  .balance__title {
+    font-size: 1em;
+  }
+
+  .balance__amount {
+    font-size: 1.8em;
+  }
+
+  .balance__logo-link {
+    margin-right: 0.4em;
+  }
+
+  .balance__logo-img {
+    height: 2.6em;
+  }
+
+  .expenses {
+    border-radius: 1em;
+    padding: 2em 1.7em 2.1em 1.7em;
+  }
+
+  .expenses__title {
+    font-size: 1.8em;
+    padding-inline: 0.3em;
+  }
+
+  .expenses__chart-container {
+    height: 15.5rem;
+  }
+
+  .expenses__chart {
+    margin-bottom: 1.5em;
+  }
+
+  .expenses__divider {
+    margin-bottom: 1.5em;
+  }
+
+  .summary {
+    padding-inline: 0.5em;
+  }
+
+  .summary__monthly,
+  .summary__rate {
+    font-size: 1em;
+  }
+
+  .summary__monthly-amount {
+    font-size: 2.65em;
+  }
+}
+
+.footer {
+  max-width: 1150px;
 }
