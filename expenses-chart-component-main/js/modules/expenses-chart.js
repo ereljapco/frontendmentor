@@ -1,7 +1,8 @@
-import expensesData from './expenses-data.js';
+import fetchExpensesData from './expenses-data.js';
 
-function displayExpensesChart() {
+async function displayExpensesChart() {
   const chartContainer = document.querySelector('.expenses__chart');
+  const expensesData = await fetchExpensesData();
   const days = expensesData.map((data) => data.day);
   const expenses = expensesData.map((data) => data.amount);
   const maxExpense = Math.ceil(Math.max(...expenses)) + 15;
