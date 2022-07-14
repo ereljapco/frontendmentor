@@ -7,9 +7,16 @@ async function displayExpensesChart() {
   const expenses = expensesData.map((data) => data.amount);
   const maxExpense = Math.ceil(Math.max(...expenses)) + 15;
   const today = new Date().getDay();
+  let day = 0;
+
+  if (today === 0) {
+    day = 6;
+  } else {
+    day = today - 1;
+  }
 
   const setBarBackgroundColor = expenses.map((data, index) => {
-    if (index === today) {
+    if (index === day) {
       return 'hsl(186, 34%, 60%)';
     }
 
@@ -17,7 +24,7 @@ async function displayExpensesChart() {
   });
 
   const setBarHoverBackgroundColor = expenses.map((data, index) => {
-    if (index === today) {
+    if (index === day) {
       return 'hsla(186, 34%, 60%, 0.7)';
     }
 
