@@ -93,6 +93,20 @@ const chart = new Chart(chartContainer, {
 });
 ```
 
+- Adjust the arrangment of days of the array returned from `new Date().getDay()`
+  - It returns an array where the week starts from Sunday. I needed to adjust the arrangements, so the highlighted bar aligns with current day.
+
+```js
+const today = new Date().getDay();
+let day = 0;
+
+if (today === 0) {
+  day = 6;
+} else {
+  day = today - 1;
+}
+```
+
 - Custom 3D-looking divider
   - I needed experimentation regarding the application of linear-gradient for this one. And this was the first time that I use the `groove` border-style. Thankfully, the divider looks good.
 
