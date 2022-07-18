@@ -104,6 +104,11 @@ comments section
   line-height: 1.5;
 }
 
+.comment__replying-to {
+  color: var(--clr-blue-500);
+  font-weight: 500;
+}
+
 .comment__votes {
   grid-row: -2 / -1;
   width: 6.25rem;
