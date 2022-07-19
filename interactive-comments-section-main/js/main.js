@@ -13,6 +13,10 @@ async function displayCommentsSection() {
     localStorage.setItem('dataComments', JSON.stringify(data.comments));
   }
 
+  if (localStorage.getItem('currentUser') == null) {
+    localStorage.setItem('currentUser', JSON.stringify(data.currentUser));
+  }
+
   const dataComments = JSON.parse(localStorage.getItem('dataComments'));
 
   let allDataComments = dataComments;
@@ -34,7 +38,7 @@ async function displayCommentsSection() {
   allComments.forEach((comment) => {
     const id = comment.dataset['id'];
     const dataComment = allDataComments.find((comment) => {
-      return comment.id === parseInt(id);
+      return comment.id == id;
     });
     const { user, score } = dataComment;
 
@@ -69,26 +73,60 @@ class Comment {
     replyForm.classList.add('comment__reply-form');
 
     replyForm.innerHTML = `<textarea
-              class="comment__reply-input"
-              cols="30"
-              rows="10"
-              placeholder="Add a comment..."
-            >@${this.replyingTo} </textarea>
-            <img
-              class="comment__user-img"
-              src="./images/avatars/image-juliusomo.png"
-              alt="juliusomo"
-            />
-            <button class="comment__reply-send-btn">Send</button>`;
+    class="comment__reply-input"
+    cols="30"
+    rows="10"
+    placeholder="Add a comment..."
+    >@${this.replyingTo} </textarea>
+    <img
+    class="comment__user-img"
+    src="./images/avatars/image-juliusomo.png"
+    alt="juliusomo"
+    />
+    <button class="comment__reply-send-btn">Send</button>`;
 
     this.comment.insertAdjacentElement('afterend', replyForm);
 
-    const dataComments = JSON.parse(localStorage.getItem('dataComments'));
+    this.replySendBtn = replyForm.querySelector('.comment__reply-send-btn');
 
-    const dataComment = dataComments.filter((comment) => comment.id == this.id);
+    this.replySendBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      let dataComments = JSON.parse(localStorage.getItem('dataComments'));
+      const dataComment = dataComments.filter(
+        (comment) => comment.id == this.id
+      );
 
-    const { replies } = dataComment[0];
+      const { replies } = dataComment[0];
+      const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
-    console.log(replies);
+      // style user's reply
+      let userReplyText = replyForm.querySelector(
+        '.comment__reply-input'
+      ).value;
+      let userReplyContent = userReplyText.replace(`@${this.replyingTo}`, '');
+
+      const datePosted = Date.now();
+      // console.log(datePosted);
+      const id = Date.now().toString();
+
+      const userReply = {
+        id: id,
+        content: `${userReplyContent}`,
+        createdAt: `1 week ago`,
+        score: 0,
+        replyingTo: this.replyingTo,
+        user: currentUser,
+      };
+
+      replies.push(userReply);
+
+      localStorage.setItem('dataComments', JSON.stringify(dataComments));
+
+      dataComments = JSON.parse(localStorage.getItem('dataComments'));
+
+      replyForm.parentNode.removeChild(replyForm);
+
+      displayCommentReplies(dataComments);
+    });
   }
 }
