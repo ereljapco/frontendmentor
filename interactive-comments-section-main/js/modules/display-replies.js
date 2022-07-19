@@ -6,7 +6,7 @@ function displayCommentReplies(comments) {
       return;
     }
 
-    const comment = document.querySelector(`#comment-${id}`);
+    const comment = document.querySelector(`[data-id='${id}']`);
     const repliesContainer = document.createElement('div');
 
     repliesContainer.classList.add('replys');

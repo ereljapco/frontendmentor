@@ -6,7 +6,7 @@ function displayComments(comments) {
       const userImg = image.png;
 
       if (replyingTo) {
-        return `<article class="comment" id="comment-${id}">
+        return `<article class="comment" data-id="${id}">
             <header class="comment__header">
               <img
                 class="comment__user-img"
@@ -49,7 +49,8 @@ function displayComments(comments) {
             </button>
           </article>`;
       }
-      return `<article class="comment" id="comment-${id}">
+
+      return `<article class="comment" data-id="${id}">
             <header class="comment__header">
               <img
                 class="comment__user-img"
