@@ -7,6 +7,16 @@ function displayCommentReplies(comments) {
     }
 
     const comment = document.querySelector(`[data-id='${id}']`);
+
+    if (
+      comment.nextElementSibling &&
+      comment.nextElementSibling.classList.contains('replys')
+    ) {
+      const repliesContainer = comment.nextElementSibling;
+      repliesContainer.innerHTML = displayComments(replies);
+      return;
+    }
+
     const repliesContainer = document.createElement('div');
 
     repliesContainer.classList.add('replys');
