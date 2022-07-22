@@ -50,85 +50,42 @@ rating component
 ============= */
 
 .rating {
-  position: relative;
   width: 87%;
+  min-width: 327.5px;
   max-width: 25.75rem;
-  height: 22.5rem;
   background-image: linear-gradient(hsl(215, 20%, 16%), hsl(215, 27%, 12%));
   border-radius: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
   overflow: hidden;
-}
-
-@media screen and (min-width: 40rem) {
-  .rating {
-    height: 26rem;
-    border-radius: 2rem;
-  }
 }
 
 .rating__main,
 .rating__submitted {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
-  padding: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 
-.rating__submitted {
-  opacity: 0;
-}
-
-.rating--submitted .rating__main,
-.rating--submitted .rating__submitted {
-  transform: translateX(-100%);
+.rating__main {
+  display: block;
 }
 
 .rating--submitted .rating__main {
+  display: none;
   animation: fadeOut 0.5s;
   opacity: 0;
-}
-
-.rating--submitted .rating__submitted {
-  animation: fadeIn 0.5s;
-  opacity: 1;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.7;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.3;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .rating__img-container {
   display: grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 10.7vw;
+  min-width: 2.5rem;
+  max-width: 3rem;
+  height: 10.7vw;
+  min-height: 2.5rem;
+  max-height: 3rem;
   background-color: var(--clr-blue-700);
   border-radius: 50%;
   padding: 0.8rem;
@@ -156,8 +113,12 @@ rating component
 
 .rating__input-label {
   position: relative;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 11.2vw;
+  min-width: 2.6rem;
+  max-width: 3.2rem;
+  height: 11.2vw;
+  min-height: 2.6rem;
+  max-height: 3.2rem;
   cursor: pointer;
 }
 
@@ -213,25 +174,35 @@ rating component
 }
 
 .rating__submitted {
-  top: 0;
-  left: 100%;
+  display: none;
+}
+
+.rating--submitted .rating__submitted {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 2.15rem;
+  animation: fadeIn 0.5s;
+  opacity: 1;
+  padding-top: 0.6rem;
+  padding-bottom: 0.7rem;
 }
 
 .rating__submitted .rating__img {
-  width: 9rem;
+  width: 38.4vw;
+  min-width: 9rem;
+  max-width: 10rem;
   margin-bottom: 1.5rem;
 }
 
 .rating__user-rating {
+  display: inline-block;
   color: var(--clr-orange-500);
   font-size: 0.88rem;
+  text-align: center;
   background-color: var(--clr-blue-700);
   border-radius: 100vh;
-  padding: 0.55rem 0.75rem 0.4rem 0.75rem;
+  padding-block: 0.55rem 0.4rem;
+  padding-inline: 0.75rem;
   margin-bottom: 1.75rem;
 }
 
@@ -240,5 +211,91 @@ rating component
 }
 
 .rating__submitted .rating__copy {
+  font-size: 0.88rem;
   text-align: center;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .rating {
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  .rating__main {
+    padding-right: 0.5rem;
+  }
+
+  .rating__img-container {
+    margin-bottom: 2.2rem;
+  }
+
+  .rating__img {
+    width: 75%;
+  }
+
+  .rating__title {
+    font-size: 1.75rem;
+  }
+
+  .rating__copy {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    margin-bottom: 1.65rem;
+  }
+
+  .rating__input-container {
+    margin-bottom: 2rem;
+  }
+
+  .rating__input-text {
+    font-size: 1.1rem;
+  }
+
+  .rating__submit-btn {
+    font-size: 1rem;
+  }
+
+  .rating__submitted .rating__img {
+    margin-bottom: 2rem;
+  }
+
+  .rating__user-rating {
+    font-size: 0.95rem;
+    padding-block: 0.55rem 0.4rem;
+    padding-inline: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .rating__submitted .rating__copy {
+    font-size: 0.96rem;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
