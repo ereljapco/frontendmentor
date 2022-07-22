@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Interactive rating component | Coded by Erel Japco</title>
-    <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -35,7 +34,7 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <form class="rating__form">
+          <form class="rating__form" aria-label="Rate us">
             <fieldset class="rating__fieldset">
               <legend class="rating__legend">Rating</legend>
               <label class="rating__input-label">
@@ -102,5 +101,6 @@
         </div>
       </section>
     </main>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
