@@ -105,10 +105,21 @@ rating component
   margin-bottom: 1.9rem;
 }
 
-.rating__input-container {
+.rating__fieldset {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
+  border-color: transparent;
+  padding: 0;
+}
+
+.rating__legend {
+  display: inline-block;
+  position: absolute;
+  left: -100vw;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .rating__input-label {
@@ -244,7 +255,7 @@ rating component
     margin-bottom: 1.65rem;
   }
 
-  .rating__input-container {
+  .rating__fieldset {
     margin-bottom: 2rem;
   }
 
